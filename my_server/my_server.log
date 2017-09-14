@@ -1,0 +1,7 @@
+[2017-09-13 16:01:58,195] db.py [line:32] INFO: Get connection client.
+[2017-09-13 16:01:58,195] db.py [line:34] INFO: Get database: dsv
+[2017-09-13 16:02:33,372] db.py [line:32] INFO: Get connection client.
+[2017-09-13 16:02:33,372] db.py [line:34] INFO: Get database: dsv
+[2017-09-13 16:03:10,708] db.py [line:32] INFO: Get connection client.
+[2017-09-13 16:03:10,708] db.py [line:34] INFO: Get database: dsv
+[2017-09-13 16:03:10,933] db.py [line:40] INFO: Add new item: {'owner': 'lijq', 'lmt': datetime.datetime(2017, 9, 13, 16, 3, 10, 708550), '_id': ObjectId('59b8e63e3a25536c48321adc')} to file_tbl

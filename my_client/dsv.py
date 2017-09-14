@@ -13,10 +13,16 @@ class Dsv():
     def __init__(self):
         self.BUFFER_SIZE = 1024
         self.HEAD_STRUCT = '128sIq32s'
+        self.info_size = struct.calcsize(self.HEAD_STRUCT)
         self.username = "default"
         self.is_signed = False
         self.total_storage = 0
         self.remain_storage = 0
+
+    def set_recv_info(self, ip, port):
+        self.data_recv_ip = ip
+        self.data_recv_port = port
+        logger.info("Self data recieve face is set as " + str(self.data_recv_ip) + ":" + str(self.data_recv_port))
 
     def set_server(self, ip, port):
         self.SERVER_IP = ip
@@ -24,18 +30,19 @@ class Dsv():
         logger.info("Target server is set as " + str(self.SERVER_IP) + ":" + str(self.SERVER_PORT))
 
     def request_for_reply(self, request):
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         try:
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.connect((self.SERVER_IP, self.SERVER_PORT))
             logger.info("Connect to server " + str(self.SERVER_IP) + ":" + str(self.SERVER_PORT))
             sock.send(request.encode("utf-8"))
             logger.info("Request: " + request + " has been sent.")
-            reply = sock.recv(BUFFER_SIZE).decode("utf-8")
+            reply = sock.recv(self.BUFFER_SIZE).decode("utf-8")
             logger.info("Reply is: " + reply)
         except socket.error as e:
             logger.error(e)
         finally:
             sock.close()
+            reply = None
             logger.info('Socket: ' + sock.getsockname() + ' has been closed.')
         return reply
 
@@ -63,12 +70,12 @@ class Dsv():
         request = "REQ@@@STO_REQ@@@" + self.username + '@@@' + str(size)
         logger.info("Request is: " + request)
         reply = self.request_for_reply(request)
-        if reply == "REPLY@@@OK":
+        if reply == "REP@@@OK":
             self.total_storage += size
             self.remain_storage += size
             logger.info('Request storage ' + size + ' success.')
             return True
-        elif reply == "REPLY@@@NO":
+        elif reply == "REP@@@NO":
             logger.warning("Storage size " + str(size) + " request failed!")
             return False
 
@@ -86,7 +93,13 @@ class Dsv():
             return False
 
     def query_file_list(self):
-        pass
+        request = 'REQ@@@FILELIST@@@' + self.username
+        reply = self.request_for_reply(request)
+        if reply.startswith('REP@@@'):
+            filelist = list(eval(reply.split('@@@')[1]))
+            return filelist
+        else:
+            return None
 
     def upload_request(self, dst_path, filename, filesize):
         request = 'REQ@@@UPLOAD@@@' + self.username + '@@@' + dst_path + '@@@' + filename + '@@@' + str(filesize)
@@ -127,16 +140,74 @@ class Dsv():
         sock.close()
         return flag
 
-    def download_file(self, file):
-        # 下载文件
-        pass
+    def download_file(self, dst_path, filepath):
+        request = 'REQ@@@DOWNLOAD@@@' + self.username + '@@@' + filepath + '@@@' + self.data_recv_ip + '@@@' + self.data_recv_port
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        try:
+            sock.connect((self.SERVER_IP, self.SERVER_PORT))
+            logger.info("Connect to server " + str(self.SERVER_IP) + ":" + str(self.SERVER_PORT))
+            sock.send(request.encode("utf-8"))
+            logger.info("Request: " + request + " has been sent.")
+        except socket.error as e:
+            logger.error(e)
+        finally:
+            sock.close()
+            logger.info('Socket: ' + sock.getsockname() + ' has been closed.')
+        flag = self.recieve_data(dst_path)
+        return flag
+
+    def recieve_data(self, dst_path):
+        server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        server_socket.bind((self.data_recv_ip, self.data_recv_port))
+        logger.info("Server socket bind to " + str(self.data_recv_ip) + ":" + str(self.data_recv_port))
+        server_socket.listen(1)
+        logger.info("Start listening")
+        logger.info("Waiting for connect...")
+        data_socket, address = server_socket.accept()
+        logger.info("Connect to client " + str(address))
+        file_info_package = data_socket.recv(self.info_size)
+        file_name, file_size, md5_recv = self.unpack_file_info(file_info_package)
+        if file_name == 'REP@@@NO':
+            logger.warning('File does not exist.')
+            flag = False
+        else:
+            recved_size = 0
+            dir = dst_path
+            if not os.path.exists(dir):
+                os.makedirs(dir)
+                logger.info('Make dir over.')
+            else:
+                logger.warning('Dir already exists.')
+            filepath = dst_path + '\\' + file_name
+            with open(filepath, 'wb') as fw:
+                while recved_size < file_size:
+                    remained_size = file_size - recved_size
+                    recv_size = self.BUFFER_SIZE if remained_size > self.BUFFER_SIZE else remained_size
+                    recv_file = data_socket.recv(recv_size)
+                    recved_size += recv_size
+                    fw.write(recv_file)
+            md5 = self.cal_md5(filepath)
+            if md5 == md5_recv:
+                logger.info('Received successfully.')
+                flag = True
+            else:
+                os.remove(filepath)
+                logger.warning('MD5 compared fail!')
+                flag = False
+        data_socket.close()
+        return flag
+
+    def unpack_file_info(self, file_info):
+        file_name, file_name_len, file_size, md5 = struct.unpack(self.HEAD_STRUCT, file_info)
+        file_name = file_name[:file_name_len]
+        return file_name.decode('utf-8'), file_size, md5.decode('utf-8')
 
     def remove_file(self, filepath):
         request = 'REQ@@@REMOVE@@@' + self.username + '@@@' + filepath
         reply = self.request_for_reply(request)
-        if reply.startswith('REPLY@@@OK'):
+        if reply.startswith('REP@@@OK'):
             return True
-        elif reply.startswith('REPLY@@@NO'):
+        elif reply.startswith('REP@@@NO'):
             return False
 
     def cal_md5(self, file_path):

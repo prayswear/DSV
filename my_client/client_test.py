@@ -27,7 +27,7 @@ path = 'C:\\Users\\47521\\Desktop\\'
 filename = '123.png'
 filesize = os.path.getsize(path + filename)
 
-data_service_port = mydsv.upload_request('mytest\\', path + filename, filesize)
+data_service_port = mydsv.upload_request('mypic\\', path + filename, filesize)
 logger.info('File data upload port is ' + data_service_port)
 
 if data_service_port == None:

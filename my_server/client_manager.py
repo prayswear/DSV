@@ -5,13 +5,14 @@ from dao import db
 import datetime
 import hashlib
 import struct
+import os
 
 
 class ClientServer():
     def __init__(self, ip, port):
         self.server_ip = ip
         self.server_port = port
-        self.dataport = 47520
+        self.data_port = 47520
         self.BUFFER_SIZE = 1024
         self.HEAD_STRUCT = '128sIq32s'
         self.info_size = struct.calcsize(self.HEAD_STRUCT)
@@ -63,11 +64,18 @@ class ClientServer():
             reply = self.storage_request_handler(request)
         elif request.startswith('REQ@@@UPLOAD'):
             reply = self.upload_handler(request)
+        elif request.startswith('REQ@@@FILELIST'):
+            reply = self.file_list_handler(request)
+        elif request.startswith('REQ@@@REMOVE'):
+            reply = self.remove_handler(request)
         elif request.startswith('SYNC@@@'):
             reply = self.sync_handler(request)
+        elif request.startswith('REQ@@@DOWNLOAD'):
+            client_socket.close()
+            self.download_handler(request)
+            return
         else:
             pass
-
         client_socket.send(reply.encode("utf-8"))
         client_socket.close()
         logger.info("Socket: " + str(address) + " has been closed.")
@@ -82,6 +90,7 @@ class ClientServer():
             self.client_list[username] = {'username': username, 'total_storage': 0, 'remain_storage': 0,
                                           'lmt': datetime.datetime.now()}
             logger.info('Sign up a new user: ' + username)
+
             reply = "REP@@@OK"
         else:
             reply = "REP@@@NO"
@@ -94,11 +103,15 @@ class ClientServer():
             # TODO check if db operate success
             self.mydb.remove('client_tbl', {'username': username})
             del self.client_list[username]
-            # TODO clear user's file
-            logger.info('Remove an user: ' + username)
+            self.mydb.remove('file_tbl', {'owner': username})
+            for i in self.file_list:
+                if i['owner'] == username:
+                    del i
+            logger.info('Remove an user: ' + username + ' and its files.')
             reply = "REP@@@OK"
         else:
             reply = "REP@@@NO"
+            logger.warning('Sign out failed.')
         return reply
 
     def name_exist(self, username):
@@ -153,16 +166,12 @@ class ClientServer():
         elif not self.check_user_storage(username, file_size):
             reply = 'REP@@@ERROR_STO'
         else:
-            # TODO update db
-            self.client_list[username]['remain_storage'] -= file_size
-            self.mydb.update('client_tbl', {'username': username},
-                             {'remain_storage': self.client_list[username]['remain_storage']})
-            threading._start_new_thread(self.data_recv_handler, ())
-            reply = 'REP@@@OK' + '@@@' + str(self.dataport)
+            threading._start_new_thread(self.data_recv_handler, username, dst_path)
+            reply = 'REP@@@OK' + '@@@' + str(self.data_port)
         return reply
 
-    def filepath_exist(self, user_name, filepath):
-        if (user_name + '\\' + filepath) in self.file_list.keys():
+    def filepath_exist(self, username, filepath):
+        if (username + '\\' + filepath) in self.file_list.keys():
             return True
         else:
             return False
@@ -174,12 +183,11 @@ class ClientServer():
         else:
             return False
 
-    def data_recv_handler(self):
+    def data_recv_handler(self, username, dst_path):
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        host, data_port = "127.0.0.1", 47520
-        server_socket.bind((host, data_port))
+        server_socket.bind((self.server_ip, self.data_port))
+        logger.info("Server socket bind to " + str(self.server_ip) + ":" + str(self.data_port))
         server_socket.listen(1)
-        logger.info("Server socket bind to " + str(host) + ":" + str(data_port))
         logger.info("Start listening")
         logger.info("Waiting for connect...")
         data_socket, address = server_socket.accept()
@@ -187,32 +195,110 @@ class ClientServer():
         file_info_package = data_socket.recv(self.info_size)
         file_name, file_size, md5_recv = self.unpack_file_info(file_info_package)
         recved_size = 0
-        with open(file_name, 'wb') as fw:
+        dir = username + '\\' + dst_path
+        if not os.path.exists(dir):
+            os.makedirs(dir)
+            logger.info('Make dir over.')
+        else:
+            logger.warning('Dir already exists.')
+        filepath = username + '\\' + dst_path + '\\' + file_name
+        with open(filepath, 'wb') as fw:
             while recved_size < file_size:
                 remained_size = file_size - recved_size
                 recv_size = self.BUFFER_SIZE if remained_size > self.BUFFER_SIZE else remained_size
                 recv_file = data_socket.recv(recv_size)
                 recved_size += recv_size
                 fw.write(recv_file)
-        md5 = self.cal_md5(file_name)
+        md5 = self.cal_md5(filepath)
         if md5 == md5_recv:
             reply = 'REP@@@OK'
+            # TODO choose storage server
+            self.file_list[filepath] = {'filepath': filepath,
+                                        'filename': file_name, 'owner': username, 'size': file_size,
+                                        'path': dst_path,
+                                        'storage_name': 'local', 'md5': md5}
+            self.mydb.add('file_tbl', self.file_list[filepath])
+            self.client_list[username]['remain_storage'] -= file_size
+            self.mydb.update('client_tbl', {'username': username},
+                             {'remain_storage': self.client_list[username]['remain_storage']})
             logger.info('Received successfully')
         else:
             reply = 'REP@@@NO'
+            os.remove(filepath)
             logger.warning('MD5 compared fail!')
+        data_socket.send(reply.encode('utf-8'))
         data_socket.close()
 
-    def add_storage(self):
-        pass
+    def download_handler(self, request):
+        username = request.split('@@@')[2]
+        filepath = request.split('@@@')[3]
+        client_data_recv_ip = request.split('@@@')[4]
+        client_data_recv_port = request.split('@@@')[5]
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        server_address = (client_data_recv_ip, client_data_recv_port)
+        if not username + '\\' + filepath in self.file_list:
+            file_head = struct.pack(self.HEAD_STRUCT, 'REQ@@@NO', 0, 0, 'NO')
+            sock.connect(server_address)
+            sock.send(file_head)
+            sock.close()
+            return False
+        else:
+            file_name, file_name_len, file_size, md5 = self.get_file_info(username + '\\' + filepath)
+            file_head = struct.pack(self.HEAD_STRUCT, file_name.encode('utf-8'), file_name_len, file_size,
+                                    md5.encode('utf-8'))
+            sock.connect(server_address)
+            sock.send(file_head)
+            sent_size = 0
+            with open(username + '\\' + filepath, 'rb') as fr:
+                while sent_size < file_size:
+                    remained_size = file_size - sent_size
+                    send_size = self.BUFFER_SIZE if remained_size > self.BUFFER_SIZE else remained_size
+                    send_file = fr.read(send_size)
+                    sent_size += send_size
+                    sock.send(send_file)
+            sock.close()
+            return True
 
-    def remove_storage(self):
-        pass
+    def file_list_handler(self, request):
+        # request is like: REQ@@@FILELIST@@@lijq
+        username = request.split('@@@')[2]
+        result = self.mydb.query_all('file_tbl', {'owner': username})
+        filelist = []
+        for i in result:
+            filelist.append(i)
+        return 'REP@@@' + str(filelist)
+
+    def remove_handler(self, request):
+        # request is like: REQ@@@REMOVE@@@lijq@@@filepath
+        username = request.split('@@@')[2]
+        filepath = request.split('@@@')[3]
+        filepath_new = username + '\\' + filepath
+        if filepath_new in self.file_list:
+            size = os.path.getsize(filepath_new)
+            os.remove(filepath_new)
+            del self.file_list[filepath_new]
+            self.mydb.remove('file_tbl', {'filepath': filepath_new})
+            self.client_list[username]['remain_storage'] += size
+            self.mydb.update('client_tbl', {'username': username},
+                             {'remain_storage': self.client_list[username]['remain_storage']})
+            reply = 'REP@@@OK'
+            logger.info('File remove over.')
+        else:
+            reply = 'REP@@@NO'
+            logger.warning('File does not exist.')
+        return reply
 
     def unpack_file_info(self, file_info):
         file_name, file_name_len, file_size, md5 = struct.unpack(self.HEAD_STRUCT, file_info)
         file_name = file_name[:file_name_len]
         return file_name.decode('utf-8'), file_size, md5.decode('utf-8')
+
+    def get_file_info(self, file_path):
+        file_name = os.path.basename(file_path)
+        file_name_len = len(file_name)
+        file_size = os.path.getsize(file_path)
+        md5 = self.cal_md5(file_path)
+        return file_name, file_name_len, file_size, md5
 
     def cal_md5(self, file_path):
         with open(file_path, 'rb') as fr:
@@ -225,3 +311,9 @@ class ClientServer():
 if __name__ == "__main__":
     logging.config.fileConfig('logging.conf')
     logger = logging.getLogger('myLogger')
+    mydb = db.DsvDb()
+    mydb.add('file_tbl', {'owner': 'lijq'})
+    result = mydb.query_all('file_tbl', {'owner': 'lijq'})
+    print(type(result))
+    for i in result:
+        print(type(i))

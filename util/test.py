@@ -1,7 +1,5 @@
 import datetime
+import os
 
-client_list = {}
-client_list['lijq'] = {'client_name': 'lijq', 'total_storage': 0, 'remain_storage': 0,
-                           'last_modify_time': datetime.datetime.now()}
-
-print(client_list['lijq']['total_storage'])
+path='lijq\\mondaw\\first1'
+os.makedirs(path)
