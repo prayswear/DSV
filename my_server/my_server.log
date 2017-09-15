@@ -950,3 +950,23 @@
 [2017-09-14 17:34:05,506] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 63987) has been closed.
 [2017-09-14 17:34:05,507] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 63988)
 [2017-09-14 17:34:05,507] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 10:14:32,641] db.py [line:32] INFO: Get connection client.
+[2017-09-15 10:14:32,642] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 10:14:32,643] db.py [line:32] INFO: Get connection client.
+[2017-09-15 10:14:32,643] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 10:14:32,645] db.py [line:49] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'_id': ObjectId('59ba4aa93a25534bd430142c'), 'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 1073741824, 'remain_storage': 1072693248, 'lmt': datetime.datetime(2017, 9, 14, 17, 23, 58, 344000)}
+[2017-09-15 10:14:32,645] client_manager.py [line:31] INFO: ClientServer remain storage is 1072693248
+[2017-09-15 10:14:32,645] db.py [line:54] INFO: Find all {} item in client_tbl, result is <pymongo.cursor.Cursor object at 0x035DC730>
+[2017-09-15 10:14:32,645] db.py [line:54] INFO: Find all {} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x035DCC70>
+[2017-09-15 10:14:32,645] db.py [line:54] INFO: Find all {} item in storage_tbl, result is <pymongo.cursor.Cursor object at 0x035DC8D0>
+[2017-09-15 10:14:32,646] client_manager.py [line:45] INFO: ClientServer info init over.
+[2017-09-15 10:14:32,646] client_manager.py [line:50] INFO: Server socket bind to 127.0.0.1:47523
+[2017-09-15 10:14:32,646] client_manager.py [line:52] INFO: Start listening
+[2017-09-15 10:14:32,646] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 10:16:09,610] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 65473)
+[2017-09-15 10:16:09,610] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 10:16:09,611] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 65473) has been closed.
+[2017-09-15 10:16:09,611] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 65474)
+[2017-09-15 10:16:09,611] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 10:16:09,612] db.py [line:54] INFO: Find all {'owner': 'lijq'} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x035DC9F0>
+[2017-09-15 10:16:09,612] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 65474) has been closed.
