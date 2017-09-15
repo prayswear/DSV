@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca711ec4-11da-42ed-8ec6-030b4c16b622" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_server/lijq/mypic/123.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/my_server/lijq/mypic/temp/123.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_client/client_cmd.py" afterPath="$PROJECT_DIR$/my_client/client_cmd.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_client/dsv.py" afterPath="$PROJECT_DIR$/my_client/dsv.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_client/my_client.log" afterPath="$PROJECT_DIR$/my_client/my_client.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_server/client_manager.py" afterPath="$PROJECT_DIR$/my_server/client_manager.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_server/manager_test.py" afterPath="$PROJECT_DIR$/my_server/manager_test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my_server/my_server.log" afterPath="$PROJECT_DIR$/my_server/my_server.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +22,8 @@
       <file leaf-file-name="dsv.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_client/dsv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state relative-caret-position="477">
+              <caret line="130" column="21" lean-forward="false" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
               <folding>
                 <element signature="e#204#481#0" expanded="false" />
                 <element signature="e#530#702#0" expanded="false" />
@@ -33,34 +34,30 @@
                 <element signature="e#2428#2927#0" expanded="false" />
                 <element signature="e#2967#3398#0" expanded="false" />
                 <element signature="e#3439#3759#0" expanded="false" />
-                <element signature="e#3829#4402#0" expanded="false" />
-                <element signature="e#4468#5571#0" expanded="false" />
                 <element signature="e#5630#6372#0" expanded="false" />
-                <element signature="e#6420#8192#0" expanded="false" />
-                <element signature="e#8245#8449#0" expanded="false" />
-                <element signature="e#8496#8739#0" expanded="false" />
-                <element signature="e#8783#8939#0" expanded="false" />
-                <element signature="e#8989#9208#0" expanded="false" />
+                <element signature="e#8495#8738#0" expanded="false" />
+                <element signature="e#8782#8938#0" expanded="false" />
+                <element signature="e#8988#9207#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client_cmd.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="client_cmd.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_client/client_cmd.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client_manager.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="client_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_server/client_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="258" column="24" lean-forward="false" selection-start-line="258" selection-start-column="24" selection-end-line="258" selection-end-column="24" />
               <folding>
                 <element signature="e#275#639#0" expanded="false" />
                 <element signature="e#674#1508#0" expanded="false" />
@@ -72,18 +69,23 @@
                 <element signature="e#4900#5260#0" expanded="false" />
                 <element signature="e#5311#5454#0" expanded="false" />
                 <element signature="e#5512#6718#0" expanded="false" />
-                <element signature="e#6767#7363#0" expanded="false" />
-                <element signature="e#7423#7668#0" expanded="false" />
-                <element signature="e#7732#7931#0" expanded="false" />
-                <element signature="e#7994#10236#0" expanded="false" />
-                <element signature="e#10287#11734#0" expanded="false" />
-                <element signature="e#11786#12176#0" expanded="false" />
-                <element signature="e#12225#13072#0" expanded="false" />
-                <element signature="e#13125#13329#0" expanded="false" />
-                <element signature="e#13379#13598#0" expanded="false" />
-                <element signature="e#13642#13798#0" expanded="false" />
-                <element signature="e#13832#14109#0" expanded="false" />
+                <element signature="e#7730#7929#0" expanded="false" />
+                <element signature="e#11811#12201#0" expanded="false" />
+                <element signature="e#13149#13353#0" expanded="false" />
+                <element signature="e#13403#13622#0" expanded="false" />
+                <element signature="e#13666#13822#0" expanded="false" />
+                <element signature="e#13856#14133#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manager_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_server/manager_test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,10 +135,10 @@
         <option value="$PROJECT_DIR$/util/go1.py" />
         <option value="$PROJECT_DIR$/util/gateway.py" />
         <option value="$PROJECT_DIR$/util/mapping.py" />
-        <option value="$PROJECT_DIR$/my_server/client_manager.py" />
         <option value="$PROJECT_DIR$/my_client/cmd.py" />
-        <option value="$PROJECT_DIR$/my_server/manager_test.py" />
         <option value="$PROJECT_DIR$/my_client/dsv.py" />
+        <option value="$PROJECT_DIR$/my_server/manager_test.py" />
+        <option value="$PROJECT_DIR$/my_server/client_manager.py" />
         <option value="$PROJECT_DIR$/my_client/client_cmd.py" />
       </list>
     </option>
@@ -180,12 +182,6 @@
             <path>
               <item name="DSV" type="b2602c69:ProjectViewProjectNode" />
               <item name="DSV" type="462c0819:PsiDirectoryNode" />
-              <item name="my_client" type="462c0819:PsiDirectoryNode" />
-              <item name="download" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSV" type="462c0819:PsiDirectoryNode" />
               <item name="my_server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -193,13 +189,6 @@
               <item name="DSV" type="462c0819:PsiDirectoryNode" />
               <item name="my_server" type="462c0819:PsiDirectoryNode" />
               <item name="lijq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DSV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DSV" type="462c0819:PsiDirectoryNode" />
-              <item name="my_server" type="462c0819:PsiDirectoryNode" />
-              <item name="lijq" type="462c0819:PsiDirectoryNode" />
-              <item name="mypic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -412,7 +401,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="15" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -634,23 +623,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_server/manager_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_client/download/123.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my_server/manager_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my_client/dsv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="32" column="30" lean-forward="false" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        <state relative-caret-position="477">
+          <caret line="130" column="21" lean-forward="false" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
           <folding>
             <element signature="e#204#481#0" expanded="false" />
             <element signature="e#530#702#0" expanded="false" />
@@ -661,30 +650,18 @@
             <element signature="e#2428#2927#0" expanded="false" />
             <element signature="e#2967#3398#0" expanded="false" />
             <element signature="e#3439#3759#0" expanded="false" />
-            <element signature="e#3829#4402#0" expanded="false" />
-            <element signature="e#4468#5571#0" expanded="false" />
             <element signature="e#5630#6372#0" expanded="false" />
-            <element signature="e#6420#8192#0" expanded="false" />
-            <element signature="e#8245#8449#0" expanded="false" />
-            <element signature="e#8496#8739#0" expanded="false" />
-            <element signature="e#8783#8939#0" expanded="false" />
-            <element signature="e#8989#9208#0" expanded="false" />
+            <element signature="e#8495#8738#0" expanded="false" />
+            <element signature="e#8782#8938#0" expanded="false" />
+            <element signature="e#8988#9207#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_client/client_cmd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/my_server/client_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="100" column="0" lean-forward="true" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+        <state relative-caret-position="312">
+          <caret line="258" column="24" lean-forward="false" selection-start-line="258" selection-start-column="24" selection-end-line="258" selection-end-column="24" />
           <folding>
             <element signature="e#275#639#0" expanded="false" />
             <element signature="e#674#1508#0" expanded="false" />
@@ -696,18 +673,21 @@
             <element signature="e#4900#5260#0" expanded="false" />
             <element signature="e#5311#5454#0" expanded="false" />
             <element signature="e#5512#6718#0" expanded="false" />
-            <element signature="e#6767#7363#0" expanded="false" />
-            <element signature="e#7423#7668#0" expanded="false" />
-            <element signature="e#7732#7931#0" expanded="false" />
-            <element signature="e#7994#10236#0" expanded="false" />
-            <element signature="e#10287#11734#0" expanded="false" />
-            <element signature="e#11786#12176#0" expanded="false" />
-            <element signature="e#12225#13072#0" expanded="false" />
-            <element signature="e#13125#13329#0" expanded="false" />
-            <element signature="e#13379#13598#0" expanded="false" />
-            <element signature="e#13642#13798#0" expanded="false" />
-            <element signature="e#13832#14109#0" expanded="false" />
+            <element signature="e#7730#7929#0" expanded="false" />
+            <element signature="e#11811#12201#0" expanded="false" />
+            <element signature="e#13149#13353#0" expanded="false" />
+            <element signature="e#13403#13622#0" expanded="false" />
+            <element signature="e#13666#13822#0" expanded="false" />
+            <element signature="e#13856#14133#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_client/client_cmd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

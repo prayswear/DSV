@@ -185,7 +185,7 @@ class Dsv():
                 logger.info('Make dir over.')
             else:
                 logger.warning('Dir already exists.')
-            filepath = dst_path + '\\' + file_name
+            filepath = dst_path + '/' + file_name
             with open(filepath, 'wb') as fw:
                 while recved_size < file_size:
                     remained_size = file_size - recved_size

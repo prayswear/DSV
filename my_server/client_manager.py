@@ -185,8 +185,8 @@ class ClientServer():
     def filepath_exist(self, username, filepath):
         for key in self.file_dict.keys():
             print('123:' + key)
-        print('456:' + username + '\\' + filepath)
-        if (username + '\\' + filepath) in self.file_dict.keys():
+        print('456:' + username + '/' + filepath)
+        if (username + '/' + filepath) in self.file_dict.keys():
             return True
         else:
             return False
@@ -210,13 +210,13 @@ class ClientServer():
         file_info_package = data_socket.recv(self.info_size)
         file_name, file_size, md5_recv = self.unpack_file_info(file_info_package)
         recved_size = 0
-        dir = username + '\\' + dst_path
+        dir = username + '/' + dst_path
         if not os.path.exists(dir):
             os.makedirs(dir)
             logger.info('Make dir over.')
         else:
             logger.warning('Dir already exists.')
-        filepath = username + '\\' + dst_path + file_name
+        filepath = username + '/' + dst_path + file_name
         with open(filepath, 'wb') as fw:
             while recved_size < file_size:
                 remained_size = file_size - recved_size
@@ -252,20 +252,20 @@ class ClientServer():
         client_data_recv_port = int(request.split('@@@')[5])
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server_address = (client_data_recv_ip, client_data_recv_port)
-        if not username + '\\' + filepath in self.file_dict:
-            file_head = struct.pack(self.HEAD_STRUCT, 'REQ@@@NO', 0, 0, 'NO')
+        if not username + '/' + filepath in self.file_dict:
+            file_head = struct.pack(self.HEAD_STRUCT, 'REQ@@@NO'.encode('utf-8'), 0, 0, 'NO'.encode('utf-8'))
             sock.connect(server_address)
             sock.send(file_head)
             sock.close()
             return False
         else:
-            file_name, file_name_len, file_size, md5 = self.get_file_info(username + '\\' + filepath)
+            file_name, file_name_len, file_size, md5 = self.get_file_info(username + '/' + filepath)
             file_head = struct.pack(self.HEAD_STRUCT, file_name.encode('utf-8'), file_name_len, file_size,
                                     md5.encode('utf-8'))
             sock.connect(server_address)
             sock.send(file_head)
             sent_size = 0
-            with open(username + '\\' + filepath, 'rb') as fr:
+            with open(username + '/' + filepath, 'rb') as fr:
                 while sent_size < file_size:
                     remained_size = file_size - sent_size
                     send_size = self.BUFFER_SIZE if remained_size > self.BUFFER_SIZE else remained_size
@@ -290,7 +290,7 @@ class ClientServer():
         # request is like: REQ@@@REMOVE@@@lijq@@@filepath
         username = request.split('@@@')[2]
         filepath = request.split('@@@')[3]
-        filepath_new = username + '\\' + filepath
+        filepath_new = username + '/' + filepath
         if filepath_new in self.file_dict:
             size = os.path.getsize(filepath_new)
             os.remove(filepath_new)

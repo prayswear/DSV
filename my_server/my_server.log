@@ -992,3 +992,427 @@
 [2017-09-15 16:57:48,214] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49339) has been closed.
 [2017-09-15 16:57:48,215] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49340)
 [2017-09-15 16:57:48,215] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 16:58:09,385] db.py [line:32] INFO: Get connection client.
+[2017-09-15 16:58:09,385] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 16:58:09,387] db.py [line:32] INFO: Get connection client.
+[2017-09-15 16:58:09,387] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 16:58:09,389] db.py [line:49] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'_id': ObjectId('59ba4aa93a25534bd430142c'), 'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 1073741824, 'remain_storage': 1072693248, 'lmt': datetime.datetime(2017, 9, 14, 17, 23, 58, 344000)}
+[2017-09-15 16:58:09,389] client_manager.py [line:31] INFO: ClientServer remain storage is 1072693248
+[2017-09-15 16:58:09,389] db.py [line:54] INFO: Find all {} item in client_tbl, result is <pymongo.cursor.Cursor object at 0x02F67D10>
+[2017-09-15 16:58:09,389] db.py [line:54] INFO: Find all {} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x02F67DB0>
+[2017-09-15 16:58:09,389] db.py [line:54] INFO: Find all {} item in storage_tbl, result is <pymongo.cursor.Cursor object at 0x02F67D50>
+[2017-09-15 16:58:09,391] client_manager.py [line:45] INFO: ClientServer info init over.
+[2017-09-15 16:58:09,391] client_manager.py [line:50] INFO: Server socket bind to 127.0.0.1:47523
+[2017-09-15 16:58:09,391] client_manager.py [line:52] INFO: Start listening
+[2017-09-15 16:58:09,391] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 16:58:12,206] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49344)
+[2017-09-15 16:58:12,207] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 16:58:12,207] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49344) has been closed.
+[2017-09-15 16:58:12,207] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49345)
+[2017-09-15 16:58:12,208] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 16:58:12,208] db.py [line:54] INFO: Find all {'owner': 'lijq'} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x02F674F0>
+[2017-09-15 16:58:12,209] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49345) has been closed.
+[2017-09-15 16:58:12,209] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49346)
+[2017-09-15 16:58:12,210] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 16:59:06,186] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49349)
+[2017-09-15 16:59:06,187] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 16:59:06,187] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49349) has been closed.
+[2017-09-15 17:00:18,044] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49350)
+[2017-09-15 17:00:18,044] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:00:18,045] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49350) has been closed.
+[2017-09-15 17:00:18,045] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49351)
+[2017-09-15 17:00:18,045] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:00:18,047] db.py [line:59] INFO: Remove item{'filepath': 'lijq\\mypic\\123.png'} item from file_tbl
+[2017-09-15 17:00:18,048] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:00:18,048] client_manager.py [line:303] INFO: File remove over.
+[2017-09-15 17:00:18,048] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49351) has been closed.
+[2017-09-15 17:00:58,290] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49362)
+[2017-09-15 17:00:58,291] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:00:58,291] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49362) has been closed.
+[2017-09-15 17:00:58,292] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49363)
+[2017-09-15 17:00:58,292] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:00:58,294] db.py [line:59] INFO: Remove item{'filepath': 'lijq\\mypic\\temp\\123.png'} item from file_tbl
+[2017-09-15 17:00:58,295] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:00:58,295] client_manager.py [line:303] INFO: File remove over.
+[2017-09-15 17:00:58,295] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49363) has been closed.
+[2017-09-15 17:10:31,686] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:10:31,686] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:10:31,687] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:10:31,687] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:10:31,699] db.py [line:49] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'_id': ObjectId('59ba4aa93a25534bd430142c'), 'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 1073741824, 'remain_storage': 1072693248, 'lmt': datetime.datetime(2017, 9, 14, 17, 23, 58, 344000)}
+[2017-09-15 17:10:31,699] client_manager.py [line:31] INFO: ClientServer remain storage is 1072693248
+[2017-09-15 17:10:31,699] db.py [line:54] INFO: Find all {} item in client_tbl, result is <pymongo.cursor.Cursor object at 0x02F67D10>
+[2017-09-15 17:10:31,699] db.py [line:54] INFO: Find all {} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x02F67D50>
+[2017-09-15 17:10:31,699] db.py [line:54] INFO: Find all {} item in storage_tbl, result is <pymongo.cursor.Cursor object at 0x02F67DB0>
+[2017-09-15 17:10:31,700] client_manager.py [line:45] INFO: ClientServer info init over.
+[2017-09-15 17:10:31,700] client_manager.py [line:50] INFO: Server socket bind to 127.0.0.1:47523
+[2017-09-15 17:10:31,700] client_manager.py [line:52] INFO: Start listening
+[2017-09-15 17:10:31,701] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:10:54,464] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49437)
+[2017-09-15 17:10:54,464] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:10:54,465] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49437) has been closed.
+[2017-09-15 17:10:54,465] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49438)
+[2017-09-15 17:10:54,465] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:10:54,465] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:10:54,467] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:10:54,467] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:10:54,467] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:10:54,467] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49438) has been closed.
+[2017-09-15 17:10:54,469] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49439)
+[2017-09-15 17:10:54,469] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:10:54,470] client_manager.py [line:195] INFO: 2097152
+[2017-09-15 17:10:54,470] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49439) has been closed.
+[2017-09-15 17:10:54,470] client_manager.py [line:204] INFO: Server socket bind to 127.0.0.1:47520
+[2017-09-15 17:10:54,470] client_manager.py [line:206] INFO: Start listening
+[2017-09-15 17:10:54,470] client_manager.py [line:207] INFO: Waiting for connect...
+[2017-09-15 17:10:54,470] client_manager.py [line:209] INFO: Connect to client ('127.0.0.1', 49440)
+[2017-09-15 17:10:54,470] client_manager.py [line:218] WARNING: Dir already exists.
+[2017-09-15 17:10:54,473] db.py [line:40] INFO: Add new item: {'filepath': 'lijq\\mypic\\123.png', 'filename': '123.png', 'owner': 'lijq', 'size': 22448, 'path': 'mypic\\', 'storage_name': 'local', 'md5': 'da4667d9a0d83006abf854aae559c4c3', 'lmt': datetime.datetime(2017, 9, 15, 17, 10, 54, 471996), '_id': ObjectId('59bb991e3a2553639c09d7ca')} to file_tbl
+[2017-09-15 17:10:54,473] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:10:54,473] client_manager.py [line:239] INFO: Received successfully
+[2017-09-15 17:12:19,291] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:12:19,292] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:12:19,293] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:12:19,293] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:12:19,295] db.py [line:49] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'_id': ObjectId('59ba4aa93a25534bd430142c'), 'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 1073741824, 'remain_storage': 1071644672, 'lmt': datetime.datetime(2017, 9, 15, 17, 10, 54, 467000)}
+[2017-09-15 17:12:19,295] client_manager.py [line:31] INFO: ClientServer remain storage is 1071644672
+[2017-09-15 17:12:19,295] db.py [line:54] INFO: Find all {} item in client_tbl, result is <pymongo.cursor.Cursor object at 0x035F7D30>
+[2017-09-15 17:12:19,295] db.py [line:54] INFO: Find all {} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x035F7CF0>
+[2017-09-15 17:12:19,295] db.py [line:54] INFO: Find all {} item in storage_tbl, result is <pymongo.cursor.Cursor object at 0x035F7E70>
+[2017-09-15 17:12:19,297] client_manager.py [line:45] INFO: ClientServer info init over.
+[2017-09-15 17:12:19,297] client_manager.py [line:50] INFO: Server socket bind to 127.0.0.1:47523
+[2017-09-15 17:12:19,297] client_manager.py [line:52] INFO: Start listening
+[2017-09-15 17:12:19,297] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:12:20,558] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49444)
+[2017-09-15 17:12:20,558] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:12:20,558] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49444) has been closed.
+[2017-09-15 17:12:20,559] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49445)
+[2017-09-15 17:12:20,559] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:12:20,559] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:12:20,560] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:12:20,561] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:12:20,561] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:12:20,561] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49445) has been closed.
+[2017-09-15 17:12:20,562] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49446)
+[2017-09-15 17:12:20,562] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:12:20,563] client_manager.py [line:195] INFO: 3123280
+[2017-09-15 17:12:20,563] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49446) has been closed.
+[2017-09-15 17:12:20,563] client_manager.py [line:204] INFO: Server socket bind to 127.0.0.1:47520
+[2017-09-15 17:12:20,563] client_manager.py [line:206] INFO: Start listening
+[2017-09-15 17:12:20,563] client_manager.py [line:207] INFO: Waiting for connect...
+[2017-09-15 17:12:20,564] client_manager.py [line:209] INFO: Connect to client ('127.0.0.1', 49447)
+[2017-09-15 17:12:20,564] client_manager.py [line:218] WARNING: Dir already exists.
+[2017-09-15 17:12:20,566] db.py [line:40] INFO: Add new item: {'filepath': 'lijq\\mypic/123.png', 'filename': '123.png', 'owner': 'lijq', 'size': 22448, 'path': 'mypic/', 'storage_name': 'local', 'md5': 'da4667d9a0d83006abf854aae559c4c3', 'lmt': datetime.datetime(2017, 9, 15, 17, 12, 20, 565798), '_id': ObjectId('59bb99743a255349ecd33e5c')} to file_tbl
+[2017-09-15 17:12:20,567] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:12:20,567] client_manager.py [line:239] INFO: Received successfully
+[2017-09-15 17:13:02,824] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:13:02,825] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:13:02,826] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:13:02,826] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:13:02,828] db.py [line:49] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'_id': ObjectId('59ba4aa93a25534bd430142c'), 'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 1073741824, 'remain_storage': 1070596096, 'lmt': datetime.datetime(2017, 9, 15, 17, 12, 20, 561000)}
+[2017-09-15 17:13:02,828] client_manager.py [line:31] INFO: ClientServer remain storage is 1070596096
+[2017-09-15 17:13:02,829] db.py [line:54] INFO: Find all {} item in client_tbl, result is <pymongo.cursor.Cursor object at 0x02FCC7F0>
+[2017-09-15 17:13:02,829] db.py [line:54] INFO: Find all {} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x02FCCC70>
+[2017-09-15 17:13:02,829] db.py [line:54] INFO: Find all {} item in storage_tbl, result is <pymongo.cursor.Cursor object at 0x02FCC8D0>
+[2017-09-15 17:13:02,830] client_manager.py [line:45] INFO: ClientServer info init over.
+[2017-09-15 17:13:02,831] client_manager.py [line:50] INFO: Server socket bind to 127.0.0.1:47523
+[2017-09-15 17:13:02,831] client_manager.py [line:52] INFO: Start listening
+[2017-09-15 17:13:02,831] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:13:04,263] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49453)
+[2017-09-15 17:13:04,263] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:13:04,263] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49453) has been closed.
+[2017-09-15 17:13:04,264] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49454)
+[2017-09-15 17:13:04,264] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:13:04,264] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:13:04,265] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:13:04,266] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:13:04,266] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:13:04,267] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49454) has been closed.
+[2017-09-15 17:13:04,267] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49455)
+[2017-09-15 17:13:04,267] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:13:04,268] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49455) has been closed.
+[2017-09-15 17:13:27,006] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49457)
+[2017-09-15 17:13:27,006] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:13:27,007] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49457) has been closed.
+[2017-09-15 17:13:27,007] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49458)
+[2017-09-15 17:13:27,007] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:13:27,008] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:13:27,009] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:13:27,009] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:13:27,010] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:13:27,010] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49458) has been closed.
+[2017-09-15 17:13:27,011] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49459)
+[2017-09-15 17:13:27,011] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:13:27,012] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49459) has been closed.
+[2017-09-15 17:15:07,923] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:15:07,924] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:15:07,932] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:15:07,932] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:15:07,935] db.py [line:49] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'_id': ObjectId('59ba4aa93a25534bd430142c'), 'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 1073741824, 'remain_storage': 1068498944, 'lmt': datetime.datetime(2017, 9, 15, 17, 13, 27, 9000)}
+[2017-09-15 17:15:07,935] client_manager.py [line:31] INFO: ClientServer remain storage is 1068498944
+[2017-09-15 17:15:07,935] db.py [line:54] INFO: Find all {} item in client_tbl, result is <pymongo.cursor.Cursor object at 0x02F9C790>
+[2017-09-15 17:15:07,935] db.py [line:54] INFO: Find all {} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x02F9C610>
+[2017-09-15 17:15:07,936] db.py [line:54] INFO: Find all {} item in storage_tbl, result is <pymongo.cursor.Cursor object at 0x02F9CA70>
+[2017-09-15 17:15:07,939] client_manager.py [line:45] INFO: ClientServer info init over.
+[2017-09-15 17:15:07,939] client_manager.py [line:50] INFO: Server socket bind to 127.0.0.1:47523
+[2017-09-15 17:15:07,939] client_manager.py [line:52] INFO: Start listening
+[2017-09-15 17:15:07,939] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:15:09,417] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49512)
+[2017-09-15 17:15:09,418] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:15:09,418] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49512) has been closed.
+[2017-09-15 17:15:09,419] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49513)
+[2017-09-15 17:15:09,419] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:15:09,419] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:15:09,420] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:15:09,420] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:15:09,421] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:15:09,421] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49513) has been closed.
+[2017-09-15 17:15:09,422] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49514)
+[2017-09-15 17:15:09,422] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:15:09,422] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49514) has been closed.
+[2017-09-15 17:15:49,745] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49516)
+[2017-09-15 17:15:49,746] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:15:49,746] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49516) has been closed.
+[2017-09-15 17:15:49,747] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49517)
+[2017-09-15 17:15:49,747] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:15:49,747] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:15:49,748] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:15:49,748] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:15:49,749] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:15:49,749] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49517) has been closed.
+[2017-09-15 17:15:49,750] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49518)
+[2017-09-15 17:15:49,750] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:15:49,750] client_manager.py [line:195] INFO: 7295136
+[2017-09-15 17:15:49,750] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49518) has been closed.
+[2017-09-15 17:15:49,751] client_manager.py [line:204] INFO: Server socket bind to 127.0.0.1:47520
+[2017-09-15 17:15:49,751] client_manager.py [line:206] INFO: Start listening
+[2017-09-15 17:15:49,751] client_manager.py [line:207] INFO: Waiting for connect...
+[2017-09-15 17:15:49,751] client_manager.py [line:209] INFO: Connect to client ('127.0.0.1', 49519)
+[2017-09-15 17:15:49,752] client_manager.py [line:216] INFO: Make dir over.
+[2017-09-15 17:15:49,755] db.py [line:40] INFO: Add new item: {'filepath': 'lijq\\mypic/test/123.png', 'filename': '123.png', 'owner': 'lijq', 'size': 22448, 'path': 'mypic/test/', 'storage_name': 'local', 'md5': 'da4667d9a0d83006abf854aae559c4c3', 'lmt': datetime.datetime(2017, 9, 15, 17, 15, 49, 754845), '_id': ObjectId('59bb9a453a25535d9c98a097')} to file_tbl
+[2017-09-15 17:15:49,755] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:15:49,755] client_manager.py [line:239] INFO: Received successfully
+[2017-09-15 17:21:53,615] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:21:53,615] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:21:53,628] db.py [line:63] INFO: Remove all data from storage_tbl
+[2017-09-15 17:21:53,628] db.py [line:63] INFO: Remove all data from client_tbl
+[2017-09-15 17:21:53,629] db.py [line:63] INFO: Remove all data from file_tbl
+[2017-09-15 17:21:53,629] db.py [line:40] INFO: Add new item: {'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 0, 'remain_storage': 0, 'lmt': datetime.datetime(2017, 9, 15, 17, 21, 53, 629419), '_id': ObjectId('59bb9bb13a255367a4d8dc57')} to storage_tbl
+[2017-09-15 17:21:53,630] db.py [line:40] INFO: Add new item: {'storage_name': 'local', 'mac': '00:11:22:33:44:55', 'total_storage': 1073741824, 'remain_storage': 1073741824, 'lmt': datetime.datetime(2017, 9, 15, 17, 21, 53, 629919), '_id': ObjectId('59bb9bb13a255367a4d8dc58')} to storage_tbl
+[2017-09-15 17:21:53,630] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:21:53,631] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:21:53,631] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:21:53,633] db.py [line:49] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'_id': ObjectId('59bb9bb13a255367a4d8dc57'), 'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 1073741824, 'remain_storage': 1073741824, 'lmt': datetime.datetime(2017, 9, 15, 17, 21, 53, 630000)}
+[2017-09-15 17:21:53,633] client_manager.py [line:31] INFO: ClientServer remain storage is 1073741824
+[2017-09-15 17:21:53,633] db.py [line:54] INFO: Find all {} item in client_tbl, result is <pymongo.cursor.Cursor object at 0x02FEBA50>
+[2017-09-15 17:21:53,633] db.py [line:54] INFO: Find all {} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x02FEBD10>
+[2017-09-15 17:21:53,633] db.py [line:54] INFO: Find all {} item in storage_tbl, result is <pymongo.cursor.Cursor object at 0x02FEB9B0>
+[2017-09-15 17:21:53,634] client_manager.py [line:45] INFO: ClientServer info init over.
+[2017-09-15 17:21:53,634] client_manager.py [line:50] INFO: Server socket bind to 127.0.0.1:47523
+[2017-09-15 17:21:53,634] client_manager.py [line:52] INFO: Start listening
+[2017-09-15 17:21:53,634] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:22:15,205] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49917)
+[2017-09-15 17:22:15,205] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:22:15,205] client_manager.py [line:89] INFO: Sign up name is lijq
+[2017-09-15 17:22:15,206] db.py [line:40] INFO: Add new item: {'username': 'lijq', 'total_storage': 0, 'remain_storage': 0, 'lmt': datetime.datetime(2017, 9, 15, 17, 22, 15, 205870), '_id': ObjectId('59bb9bc73a255367a4d8dc5a')} to client_tbl
+[2017-09-15 17:22:15,206] client_manager.py [line:95] INFO: Sign up a new user: lijq
+[2017-09-15 17:22:15,206] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49917) has been closed.
+[2017-09-15 17:22:15,207] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49918)
+[2017-09-15 17:22:15,207] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:22:15,207] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49918) has been closed.
+[2017-09-15 17:22:15,208] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49919)
+[2017-09-15 17:22:15,208] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:22:15,208] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:22:15,209] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:22:15,210] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:22:15,210] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:22:15,210] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49919) has been closed.
+[2017-09-15 17:22:15,211] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49920)
+[2017-09-15 17:22:15,211] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:22:15,211] client_manager.py [line:195] INFO: 1048576
+[2017-09-15 17:22:15,212] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49920) has been closed.
+[2017-09-15 17:22:15,212] client_manager.py [line:204] INFO: Server socket bind to 127.0.0.1:47520
+[2017-09-15 17:22:15,212] client_manager.py [line:206] INFO: Start listening
+[2017-09-15 17:22:15,212] client_manager.py [line:207] INFO: Waiting for connect...
+[2017-09-15 17:22:15,213] client_manager.py [line:209] INFO: Connect to client ('127.0.0.1', 49921)
+[2017-09-15 17:22:15,214] client_manager.py [line:216] INFO: Make dir over.
+[2017-09-15 17:22:15,216] db.py [line:40] INFO: Add new item: {'filepath': 'lijq/mypic/123.png', 'filename': '123.png', 'owner': 'lijq', 'size': 22448, 'path': 'mypic/', 'storage_name': 'local', 'md5': 'da4667d9a0d83006abf854aae559c4c3', 'lmt': datetime.datetime(2017, 9, 15, 17, 22, 15, 216876), '_id': ObjectId('59bb9bc73a255367a4d8dc5b')} to file_tbl
+[2017-09-15 17:22:15,217] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:22:15,217] client_manager.py [line:239] INFO: Received successfully
+[2017-09-15 17:22:53,636] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:22:53,636] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:22:53,639] db.py [line:63] INFO: Remove all data from storage_tbl
+[2017-09-15 17:22:53,639] db.py [line:63] INFO: Remove all data from client_tbl
+[2017-09-15 17:22:53,640] db.py [line:63] INFO: Remove all data from file_tbl
+[2017-09-15 17:22:53,640] db.py [line:40] INFO: Add new item: {'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 0, 'remain_storage': 0, 'lmt': datetime.datetime(2017, 9, 15, 17, 22, 53, 640127), '_id': ObjectId('59bb9bed3a25535c303748dc')} to storage_tbl
+[2017-09-15 17:22:53,641] db.py [line:40] INFO: Add new item: {'storage_name': 'local', 'mac': '00:11:22:33:44:55', 'total_storage': 1073741824, 'remain_storage': 1073741824, 'lmt': datetime.datetime(2017, 9, 15, 17, 22, 53, 640627), '_id': ObjectId('59bb9bed3a25535c303748dd')} to storage_tbl
+[2017-09-15 17:22:53,641] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:22:53,642] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:22:53,642] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:22:53,644] db.py [line:49] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'_id': ObjectId('59bb9bed3a25535c303748dc'), 'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 1073741824, 'remain_storage': 1073741824, 'lmt': datetime.datetime(2017, 9, 15, 17, 22, 53, 641000)}
+[2017-09-15 17:22:53,644] client_manager.py [line:31] INFO: ClientServer remain storage is 1073741824
+[2017-09-15 17:22:53,644] db.py [line:54] INFO: Find all {} item in client_tbl, result is <pymongo.cursor.Cursor object at 0x031ABA90>
+[2017-09-15 17:22:53,644] db.py [line:54] INFO: Find all {} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x031ABD50>
+[2017-09-15 17:22:53,644] db.py [line:54] INFO: Find all {} item in storage_tbl, result is <pymongo.cursor.Cursor object at 0x031AB9F0>
+[2017-09-15 17:22:53,645] client_manager.py [line:45] INFO: ClientServer info init over.
+[2017-09-15 17:22:53,645] client_manager.py [line:50] INFO: Server socket bind to 127.0.0.1:47523
+[2017-09-15 17:22:53,645] client_manager.py [line:52] INFO: Start listening
+[2017-09-15 17:22:53,646] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:22:54,999] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49944)
+[2017-09-15 17:22:55,000] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:22:55,000] client_manager.py [line:89] INFO: Sign up name is lijq
+[2017-09-15 17:22:55,001] db.py [line:40] INFO: Add new item: {'username': 'lijq', 'total_storage': 0, 'remain_storage': 0, 'lmt': datetime.datetime(2017, 9, 15, 17, 22, 55, 310), '_id': ObjectId('59bb9bef3a25535c303748df')} to client_tbl
+[2017-09-15 17:22:55,001] client_manager.py [line:95] INFO: Sign up a new user: lijq
+[2017-09-15 17:22:55,001] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49944) has been closed.
+[2017-09-15 17:22:55,002] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49945)
+[2017-09-15 17:22:55,002] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:22:55,002] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49945) has been closed.
+[2017-09-15 17:22:55,003] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49946)
+[2017-09-15 17:22:55,003] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:22:55,003] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:22:55,004] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:22:55,005] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:22:55,005] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:22:55,005] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49946) has been closed.
+[2017-09-15 17:22:55,006] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49947)
+[2017-09-15 17:22:55,006] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:22:55,007] client_manager.py [line:195] INFO: 1048576
+[2017-09-15 17:22:55,007] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49947) has been closed.
+[2017-09-15 17:22:55,007] client_manager.py [line:204] INFO: Server socket bind to 127.0.0.1:47520
+[2017-09-15 17:22:55,007] client_manager.py [line:206] INFO: Start listening
+[2017-09-15 17:22:55,007] client_manager.py [line:207] INFO: Waiting for connect...
+[2017-09-15 17:22:55,008] client_manager.py [line:209] INFO: Connect to client ('127.0.0.1', 49948)
+[2017-09-15 17:22:55,008] client_manager.py [line:218] WARNING: Dir already exists.
+[2017-09-15 17:22:55,010] db.py [line:40] INFO: Add new item: {'filepath': 'lijq/mypic/123.png', 'filename': '123.png', 'owner': 'lijq', 'size': 22448, 'path': 'mypic/', 'storage_name': 'local', 'md5': 'da4667d9a0d83006abf854aae559c4c3', 'lmt': datetime.datetime(2017, 9, 15, 17, 22, 55, 9306), '_id': ObjectId('59bb9bef3a25535c303748e0')} to file_tbl
+[2017-09-15 17:22:55,011] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:22:55,011] client_manager.py [line:239] INFO: Received successfully
+[2017-09-15 17:23:36,808] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49977)
+[2017-09-15 17:23:36,808] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:23:36,808] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49977) has been closed.
+[2017-09-15 17:23:36,809] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49978)
+[2017-09-15 17:23:36,809] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:23:36,809] db.py [line:54] INFO: Find all {'owner': 'lijq'} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x031BE5B0>
+[2017-09-15 17:23:36,810] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 49978) has been closed.
+[2017-09-15 17:23:36,811] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 49979)
+[2017-09-15 17:23:36,811] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:15,077] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:25:15,077] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:25:15,080] db.py [line:63] INFO: Remove all data from storage_tbl
+[2017-09-15 17:25:15,080] db.py [line:63] INFO: Remove all data from client_tbl
+[2017-09-15 17:25:15,081] db.py [line:63] INFO: Remove all data from file_tbl
+[2017-09-15 17:25:15,081] db.py [line:40] INFO: Add new item: {'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 0, 'remain_storage': 0, 'lmt': datetime.datetime(2017, 9, 15, 17, 25, 15, 81148), '_id': ObjectId('59bb9c7b3a25536968a1bf32')} to storage_tbl
+[2017-09-15 17:25:15,082] db.py [line:40] INFO: Add new item: {'storage_name': 'local', 'mac': '00:11:22:33:44:55', 'total_storage': 1073741824, 'remain_storage': 1073741824, 'lmt': datetime.datetime(2017, 9, 15, 17, 25, 15, 81148), '_id': ObjectId('59bb9c7b3a25536968a1bf33')} to storage_tbl
+[2017-09-15 17:25:15,082] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:25:15,083] db.py [line:32] INFO: Get connection client.
+[2017-09-15 17:25:15,084] db.py [line:34] INFO: Get database: dsv
+[2017-09-15 17:25:15,085] db.py [line:49] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'_id': ObjectId('59bb9c7b3a25536968a1bf32'), 'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 1073741824, 'remain_storage': 1073741824, 'lmt': datetime.datetime(2017, 9, 15, 17, 25, 15, 82000)}
+[2017-09-15 17:25:15,086] client_manager.py [line:31] INFO: ClientServer remain storage is 1073741824
+[2017-09-15 17:25:15,086] db.py [line:54] INFO: Find all {} item in client_tbl, result is <pymongo.cursor.Cursor object at 0x03D4B690>
+[2017-09-15 17:25:15,086] db.py [line:54] INFO: Find all {} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x03D4BEF0>
+[2017-09-15 17:25:15,086] db.py [line:54] INFO: Find all {} item in storage_tbl, result is <pymongo.cursor.Cursor object at 0x03D4B9D0>
+[2017-09-15 17:25:15,087] client_manager.py [line:45] INFO: ClientServer info init over.
+[2017-09-15 17:25:15,087] client_manager.py [line:50] INFO: Server socket bind to 127.0.0.1:47523
+[2017-09-15 17:25:15,087] client_manager.py [line:52] INFO: Start listening
+[2017-09-15 17:25:15,087] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:37,660] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50052)
+[2017-09-15 17:25:37,660] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:37,660] client_manager.py [line:89] INFO: Sign up name is lijq
+[2017-09-15 17:25:37,661] db.py [line:40] INFO: Add new item: {'username': 'lijq', 'total_storage': 0, 'remain_storage': 0, 'lmt': datetime.datetime(2017, 9, 15, 17, 25, 37, 660749), '_id': ObjectId('59bb9c913a25536968a1bf35')} to client_tbl
+[2017-09-15 17:25:37,661] client_manager.py [line:95] INFO: Sign up a new user: lijq
+[2017-09-15 17:25:37,661] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50052) has been closed.
+[2017-09-15 17:25:37,662] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50053)
+[2017-09-15 17:25:37,662] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:37,662] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50053) has been closed.
+[2017-09-15 17:25:37,663] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50054)
+[2017-09-15 17:25:37,663] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:37,663] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:25:37,664] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:25:37,665] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:25:37,665] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:25:37,666] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50054) has been closed.
+[2017-09-15 17:25:37,666] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50055)
+[2017-09-15 17:25:37,666] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:37,667] client_manager.py [line:195] INFO: 1048576
+[2017-09-15 17:25:37,667] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50055) has been closed.
+[2017-09-15 17:25:37,667] client_manager.py [line:204] INFO: Server socket bind to 127.0.0.1:47520
+[2017-09-15 17:25:37,667] client_manager.py [line:206] INFO: Start listening
+[2017-09-15 17:25:37,667] client_manager.py [line:207] INFO: Waiting for connect...
+[2017-09-15 17:25:37,668] client_manager.py [line:209] INFO: Connect to client ('127.0.0.1', 50056)
+[2017-09-15 17:25:37,668] client_manager.py [line:218] WARNING: Dir already exists.
+[2017-09-15 17:25:37,670] db.py [line:40] INFO: Add new item: {'filepath': 'lijq/mypic/123.png', 'filename': '123.png', 'owner': 'lijq', 'size': 22448, 'path': 'mypic/', 'storage_name': 'local', 'md5': 'da4667d9a0d83006abf854aae559c4c3', 'lmt': datetime.datetime(2017, 9, 15, 17, 25, 37, 669742), '_id': ObjectId('59bb9c913a25536968a1bf36')} to file_tbl
+[2017-09-15 17:25:37,671] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:25:37,671] client_manager.py [line:239] INFO: Received successfully
+[2017-09-15 17:25:50,698] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50062)
+[2017-09-15 17:25:50,698] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:50,698] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50062) has been closed.
+[2017-09-15 17:25:50,699] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50063)
+[2017-09-15 17:25:50,699] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:50,699] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:25:50,700] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:25:50,701] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:25:50,701] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:25:50,701] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50063) has been closed.
+[2017-09-15 17:25:50,702] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50064)
+[2017-09-15 17:25:50,702] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:50,702] db.py [line:54] INFO: Find all {'owner': 'lijq'} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x03D5E5D0>
+[2017-09-15 17:25:50,703] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50064) has been closed.
+[2017-09-15 17:25:50,704] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50065)
+[2017-09-15 17:25:50,704] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:57,855] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50074)
+[2017-09-15 17:25:57,856] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:57,856] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50074) has been closed.
+[2017-09-15 17:25:57,857] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50075)
+[2017-09-15 17:25:57,857] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:57,857] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:25:57,858] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:25:57,858] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:25:57,859] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:25:57,859] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50075) has been closed.
+[2017-09-15 17:25:57,860] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50076)
+[2017-09-15 17:25:57,860] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:25:57,860] db.py [line:54] INFO: Find all {'owner': 'lijq'} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x03D5E6F0>
+[2017-09-15 17:25:57,861] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50076) has been closed.
+[2017-09-15 17:25:57,862] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50077)
+[2017-09-15 17:25:57,862] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:18,428] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50085)
+[2017-09-15 17:26:18,428] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:18,428] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50085) has been closed.
+[2017-09-15 17:26:18,429] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50086)
+[2017-09-15 17:26:18,429] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:18,429] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:26:18,430] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:26:18,431] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:26:18,431] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:26:18,431] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50086) has been closed.
+[2017-09-15 17:26:18,432] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50087)
+[2017-09-15 17:26:18,432] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:18,433] db.py [line:54] INFO: Find all {'owner': 'lijq'} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x03D5E630>
+[2017-09-15 17:26:18,433] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50087) has been closed.
+[2017-09-15 17:26:18,434] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50088)
+[2017-09-15 17:26:18,434] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:18,437] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50090)
+[2017-09-15 17:26:18,437] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:18,437] client_manager.py [line:306] WARNING: File does not exist.
+[2017-09-15 17:26:18,438] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50090) has been closed.
+[2017-09-15 17:26:26,387] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50093)
+[2017-09-15 17:26:26,387] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:26,387] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50093) has been closed.
+[2017-09-15 17:26:26,388] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50094)
+[2017-09-15 17:26:26,388] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:26,388] client_manager.py [line:149] INFO: Client lijq requests for 1048576 storage.
+[2017-09-15 17:26:26,389] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:26:26,390] db.py [line:45] INFO: Update {'storage_name': 'local'}item in storage_tbl
+[2017-09-15 17:26:26,390] db.py [line:45] INFO: Update {'storage_name': 'total'}item in storage_tbl
+[2017-09-15 17:26:26,390] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50094) has been closed.
+[2017-09-15 17:26:26,391] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50095)
+[2017-09-15 17:26:26,391] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:26,391] db.py [line:54] INFO: Find all {'owner': 'lijq'} item in file_tbl, result is <pymongo.cursor.Cursor object at 0x03D5E8B0>
+[2017-09-15 17:26:26,392] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50095) has been closed.
+[2017-09-15 17:26:26,393] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50096)
+[2017-09-15 17:26:26,393] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:26,396] client_manager.py [line:56] INFO: Connect to client, socket is ('127.0.0.1', 50098)
+[2017-09-15 17:26:26,396] client_manager.py [line:54] INFO: Waiting for connect...
+[2017-09-15 17:26:26,397] db.py [line:59] INFO: Remove item{'filepath': 'lijq/mypic/123.png'} item from file_tbl
+[2017-09-15 17:26:26,398] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
+[2017-09-15 17:26:26,398] client_manager.py [line:303] INFO: File remove over.
+[2017-09-15 17:26:26,398] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50098) has been closed.

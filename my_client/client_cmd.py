@@ -10,7 +10,7 @@ mydsv.set_server("127.0.0.1", 47523)
 username = 'lijq'
 storage = 1048576
 
-path = 'C:\\Users\\47521\\Desktop\\'
+path = 'C://Users/47521/Desktop/'
 # filename = 'test.txt'
 filename = '123.png'
 filesize = os.path.getsize(path + filename)
@@ -20,15 +20,15 @@ filesize = os.path.getsize(path + filename)
 mydsv.set_name(username)
 mydsv.sync_user_info()
 print(mydsv.is_signed)
-# mydsv.request_storage(storage)
+mydsv.request_storage(storage)
 print(mydsv.remain_storage)
 
-# data_service_port = mydsv.upload_request('mypic\\', filename, filesize)
+# data_service_port = mydsv.upload_request('mypic/', filename, filesize)
 # print(data_service_port)
 # mydsv.upload_file(47520, path + filename)
 
-# print(mydsv.query_file_list())
-# mydsv.set_recv_info('127.0.0.1',47777)
-# mydsv.download_file('download\\','mypic\\123.png')
+print(mydsv.query_file_list())
+mydsv.set_recv_info('127.0.0.1',47777)
+mydsv.download_file('download/','mypic/123.png')
 
-print(mydsv.remove_file('mypic\\temp\\123.png'))
+print(mydsv.remove_file('mypic/123.png'))
