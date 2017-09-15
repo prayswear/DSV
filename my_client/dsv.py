@@ -19,10 +19,18 @@ class Dsv():
         self.remain_storage = 0
         self.file_list = []
 
+    def set_recv_info(self, ip, port):
+        self.data_recv_ip = ip
+        self.data_recv_port = port
+        logger.info("Self data recieve face is set as " + str(self.data_recv_ip) + ":" + str(self.data_recv_port))
+
     def set_server(self, ip, port):
         self.SERVER_IP = ip
         self.SERVER_PORT = port
         logger.info("Target server is set as " + str(self.SERVER_IP) + ":" + str(self.SERVER_PORT))
+
+    def set_name(self,username):
+        self.username=username
 
     def request_for_reply(self, request):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -139,7 +147,8 @@ class Dsv():
         return flag
 
     def download_file(self, dst_path, filepath):
-        request = 'REQ@@@DOWNLOAD@@@' + self.username + '@@@' + filepath
+        request = 'REQ@@@DOWNLOAD@@@' + self.username + '@@@' + filepath + '@@@' + self.data_recv_ip + '@@@' + str(
+            self.data_recv_port)
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         try:
             sock.connect((self.SERVER_IP, self.SERVER_PORT))
@@ -151,7 +160,6 @@ class Dsv():
         finally:
             logger.info('Socket: ' + str(sock.getsockname()) + ' has been closed.')
             sock.close()
-
         flag = self.recieve_data(dst_path)
         return flag
 

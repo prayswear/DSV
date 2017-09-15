@@ -15,19 +15,20 @@ path = 'C:\\Users\\47521\\Desktop\\'
 filename = '123.png'
 filesize = os.path.getsize(path + filename)
 
-#mydsv.sign_up(username)
+# mydsv.sign_up(username)
 
-mydsv.username = username
+mydsv.set_name(username)
 mydsv.sync_user_info()
 print(mydsv.is_signed)
-#mydsv.request_storage(storage)
+# mydsv.request_storage(storage)
 print(mydsv.remain_storage)
 
-#data_service_port = mydsv.upload_request('mypic\\', filename, filesize)
-#print(data_service_port)
-#mydsv.upload_file(47520, path + filename)
+# data_service_port = mydsv.upload_request('mypic\\', filename, filesize)
+# print(data_service_port)
+# mydsv.upload_file(47520, path + filename)
 
-print(mydsv.query_file_list())
-#mydsv.set_recv_info('127.0.0.1',47777)
-#mydsv.download_file('\\','mypic\\123.png')
+# print(mydsv.query_file_list())
+# mydsv.set_recv_info('127.0.0.1',47777)
+# mydsv.download_file('download\\','mypic\\123.png')
 
+print(mydsv.remove_file('mypic\\temp\\123.png'))
