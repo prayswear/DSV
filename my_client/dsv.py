@@ -4,9 +4,8 @@ import struct
 import os
 import socket
 
-if __name__ == '__main__':
-    logging.config.fileConfig('logging.conf')
-    logger = logging.getLogger('myLogger')
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger('myLogger')
 
 
 class Dsv():
@@ -18,6 +17,7 @@ class Dsv():
         self.is_signed = False
         self.total_storage = 0
         self.remain_storage = 0
+        self.file_list = []
 
     def set_recv_info(self, ip, port):
         self.data_recv_ip = ip
@@ -31,6 +31,7 @@ class Dsv():
 
     def request_for_reply(self, request):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        reply = 'EMPTY'
         try:
             sock.connect((self.SERVER_IP, self.SERVER_PORT))
             logger.info("Connect to server " + str(self.SERVER_IP) + ":" + str(self.SERVER_PORT))
@@ -41,9 +42,9 @@ class Dsv():
         except socket.error as e:
             logger.error(e)
         finally:
+            sockname = sock.getsockname()
             sock.close()
-            reply = None
-            logger.info('Socket: ' + sock.getsockname() + ' has been closed.')
+            logger.info('Socket: ' + str(sockname) + ' has been closed.')
         return reply
 
     def sign_up(self, username):
@@ -73,7 +74,7 @@ class Dsv():
         if reply == "REP@@@OK":
             self.total_storage += size
             self.remain_storage += size
-            logger.info('Request storage ' + size + ' success.')
+            logger.info('Request storage ' + str(size) + ' success.')
             return True
         elif reply == "REP@@@NO":
             logger.warning("Storage size " + str(size) + " request failed!")
@@ -84,8 +85,8 @@ class Dsv():
         reply = self.request_for_reply(request)
         if reply.startswith('REP@@@OK'):
             self.is_signed = True
-            self.total_storage = reply.split('@@@')[2]
-            self.remain_storage = reply.split('@@@')[3]
+            self.total_storage = int(reply.split('@@@')[2])
+            self.remain_storage = int(reply.split('@@@')[3])
             logger.info('Synchron success.')
             return True
         else:
@@ -95,8 +96,10 @@ class Dsv():
     def query_file_list(self):
         request = 'REQ@@@FILELIST@@@' + self.username
         reply = self.request_for_reply(request)
+        logger.info(reply)
         if reply.startswith('REP@@@'):
             filelist = list(eval(reply.split('@@@')[1]))
+            self.file_list = filelist
             return filelist
         else:
             return None
@@ -141,7 +144,8 @@ class Dsv():
         return flag
 
     def download_file(self, dst_path, filepath):
-        request = 'REQ@@@DOWNLOAD@@@' + self.username + '@@@' + filepath + '@@@' + self.data_recv_ip + '@@@' + self.data_recv_port
+        request = 'REQ@@@DOWNLOAD@@@' + self.username + '@@@' + filepath + '@@@' + self.data_recv_ip + '@@@' + str(
+            self.data_recv_port)
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         try:
             sock.connect((self.SERVER_IP, self.SERVER_PORT))
@@ -151,8 +155,9 @@ class Dsv():
         except socket.error as e:
             logger.error(e)
         finally:
+            logger.info('Socket: ' + str(sock.getsockname()) + ' has been closed.')
             sock.close()
-            logger.info('Socket: ' + sock.getsockname() + ' has been closed.')
+
         flag = self.recieve_data(dst_path)
         return flag
 

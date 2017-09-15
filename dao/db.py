@@ -51,6 +51,7 @@ class DsvDb():
 
     def query_all(self, tbl, condition):
         result = self.db[tbl].find(condition)
+        logger.info('Find all ' + str(condition) + ' item in ' + tbl + ', result is ' + str(result))
         return result
 
     def remove(self, tbl, condition):

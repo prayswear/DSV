@@ -7,6 +7,9 @@ import hashlib
 import struct
 import os
 
+logging.config.fileConfig('logging.conf')
+logger = logging.getLogger('myLogger')
+
 
 class ClientServer():
     def __init__(self, ip, port):
@@ -17,28 +20,28 @@ class ClientServer():
         self.HEAD_STRUCT = '128sIq32s'
         self.info_size = struct.calcsize(self.HEAD_STRUCT)
         self.remain_storage = 0
-        self.client_list = {}
-        self.file_list = {}
-        self.storage_list = {}
+        self.client_dict = {}
+        self.file_dict = {}
+        self.storage_dict = {}
         self.mydb = db.DsvDb()
 
     def info_init(self):
         # get basic info from database
-        self.remain_storage = self.mydb.query('storage_tbl', {'storage_name': 'total'})
-        logger.info('ClientServer remain storage is ' + self.remain_storage)
+        self.remain_storage = self.mydb.query('storage_tbl', {'storage_name': 'total'})['remain_storage']
+        logger.info('ClientServer remain storage is ' + str(self.remain_storage))
         client_result = self.mydb.query_all('client_tbl', {})
         file_result = self.mydb.query_all('file_tbl', {})
         storage_result = self.mydb.query_all('storage_tbl', {})
 
         if not client_result == None:
             for i in client_result:
-                self.client_list[i['client_name']] = i
+                self.client_dict[i['username']] = i
         if not file_result == None:
             for i in file_result:
-                self.file_list[i['filepath']] = i
+                self.file_dict[i['filepath']] = i
         if not storage_result == None:
             for i in storage_result:
-                self.storage_list[i['server_name']] = i
+                self.storage_dict[i['storage_name']] = i
         logger.info('ClientServer info init over.')
 
     def start(self):
@@ -86,8 +89,8 @@ class ClientServer():
         logger.info("Sign up name is " + username)
         if not self.name_exist(username):
             # TODO check if db operate success
-            self.mydb.client_tbl_add(username, datetime.datetime.now())
-            self.client_list[username] = {'username': username, 'total_storage': 0, 'remain_storage': 0,
+            self.mydb.client_tbl_add(username)
+            self.client_dict[username] = {'username': username, 'total_storage': 0, 'remain_storage': 0,
                                           'lmt': datetime.datetime.now()}
             logger.info('Sign up a new user: ' + username)
 
@@ -102,9 +105,9 @@ class ClientServer():
         if not self.name_exist(username):
             # TODO check if db operate success
             self.mydb.remove('client_tbl', {'username': username})
-            del self.client_list[username]
+            del self.client_dict[username]
             self.mydb.remove('file_tbl', {'owner': username})
-            for i in self.file_list:
+            for i in self.file_dict:
                 if i['owner'] == username:
                     del i
             logger.info('Remove an user: ' + username + ' and its files.')
@@ -116,7 +119,7 @@ class ClientServer():
 
     def name_exist(self, username):
         # check if the name is exist
-        if username in self.client_list.keys():
+        if username in self.client_dict.keys():
             return True
         else:
             return False
@@ -125,8 +128,9 @@ class ClientServer():
         # request is like: SYNC@@@lijq
         username = request.split('@@@')[1]
         if self.name_exist(username):
-            reply = 'REP@@@OK@@@' + self.client_list[username]['total_storage'] + '@@@' + self.client_list[username][
-                'remain_storage']
+            reply = 'REP@@@OK@@@' + str(self.client_dict[username]['total_storage']) + '@@@' + str(
+                self.client_dict[username][
+                    'remain_storage'])
         else:
             reply = 'REP@@@NO'
         return reply
@@ -144,17 +148,25 @@ class ClientServer():
         size = int(request.split("@@@")[3])
         logger.info('Client ' + username + ' requests for ' + str(size) + ' storage.')
         if self.check_storage(username, size):
-            self.client_list[username]['total_storage'] += size
-            self.client_list[username]['remain_storage'] += size
+            self.client_dict[username]['total_storage'] += size
+            self.client_dict[username]['remain_storage'] += size
             self.mydb.update('client_tbl', {'username': username},
-                             {'total_storage': self.client_list[username]['total_storage'],
-                              'remain_storage': self.client_list[username]['remain_storage']})
-            msg = "REPLY@@@OK"
+                             {'total_storage': self.client_dict[username]['total_storage'],
+                              'remain_storage': self.client_dict[username]['remain_storage']})
+            self.storage_dict['local']['remain_storage'] -= size
+            self.mydb.update('storage_tbl', {'storage_name': 'local'},
+                             {'remain_storage': self.storage_dict['local']['remain_storage']})
+            self.storage_dict['total']['remain_storage'] -= size
+            self.mydb.update('storage_tbl', {'storage_name': 'total'},
+                             {'remain_storage': self.storage_dict['total']['remain_storage']})
+
+            msg = "REP@@@OK"
         else:
-            msg = "REPLY@@@NO"
+            msg = "REP@@@NO"
         return msg
 
     def upload_handler(self, request):
+        # request is like:
         request_split = request.split('@@@')
         username = request_split[2]
         dst_path = request_split[3]
@@ -166,19 +178,22 @@ class ClientServer():
         elif not self.check_user_storage(username, file_size):
             reply = 'REP@@@ERROR_STO'
         else:
-            threading._start_new_thread(self.data_recv_handler, username, dst_path)
+            threading._start_new_thread(self.data_recv_handler, (username, dst_path))
             reply = 'REP@@@OK' + '@@@' + str(self.data_port)
         return reply
 
     def filepath_exist(self, username, filepath):
-        if (username + '\\' + filepath) in self.file_list.keys():
+        for key in self.file_dict.keys():
+            print('123:' + key)
+        print('456:' + username + '\\' + filepath)
+        if (username + '\\' + filepath) in self.file_dict.keys():
             return True
         else:
             return False
 
     def check_user_storage(self, username, filesize):
-        logger.info(self.client_list[username]['remain_storage'])
-        if int(filesize) <= int(self.client_list[username]['remain_storage']):
+        logger.info(self.client_dict[username]['remain_storage'])
+        if int(filesize) <= int(self.client_dict[username]['remain_storage']):
             return True
         else:
             return False
@@ -201,7 +216,7 @@ class ClientServer():
             logger.info('Make dir over.')
         else:
             logger.warning('Dir already exists.')
-        filepath = username + '\\' + dst_path + '\\' + file_name
+        filepath = username + '\\' + dst_path + file_name
         with open(filepath, 'wb') as fw:
             while recved_size < file_size:
                 remained_size = file_size - recved_size
@@ -213,14 +228,14 @@ class ClientServer():
         if md5 == md5_recv:
             reply = 'REP@@@OK'
             # TODO choose storage server
-            self.file_list[filepath] = {'filepath': filepath,
+            self.file_dict[filepath] = {'filepath': filepath,
                                         'filename': file_name, 'owner': username, 'size': file_size,
                                         'path': dst_path,
                                         'storage_name': 'local', 'md5': md5}
-            self.mydb.add('file_tbl', self.file_list[filepath])
-            self.client_list[username]['remain_storage'] -= file_size
+            self.mydb.add('file_tbl', self.file_dict[filepath])
+            self.client_dict[username]['remain_storage'] -= file_size
             self.mydb.update('client_tbl', {'username': username},
-                             {'remain_storage': self.client_list[username]['remain_storage']})
+                             {'remain_storage': self.client_dict[username]['remain_storage']})
             logger.info('Received successfully')
         else:
             reply = 'REP@@@NO'
@@ -230,13 +245,14 @@ class ClientServer():
         data_socket.close()
 
     def download_handler(self, request):
+        print(request)
         username = request.split('@@@')[2]
         filepath = request.split('@@@')[3]
         client_data_recv_ip = request.split('@@@')[4]
-        client_data_recv_port = request.split('@@@')[5]
+        client_data_recv_port = int(request.split('@@@')[5])
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server_address = (client_data_recv_ip, client_data_recv_port)
-        if not username + '\\' + filepath in self.file_list:
+        if not username + '\\' + filepath in self.file_dict:
             file_head = struct.pack(self.HEAD_STRUCT, 'REQ@@@NO', 0, 0, 'NO')
             sock.connect(server_address)
             sock.send(file_head)
@@ -265,7 +281,9 @@ class ClientServer():
         result = self.mydb.query_all('file_tbl', {'owner': username})
         filelist = []
         for i in result:
-            filelist.append(i)
+            filelist.append(
+                {'filepath': i['path'] + i['filename'], 'filename': i['filename'], 'path': i['path'], 'md5': i['md5']})
+
         return 'REP@@@' + str(filelist)
 
     def remove_handler(self, request):
@@ -273,14 +291,14 @@ class ClientServer():
         username = request.split('@@@')[2]
         filepath = request.split('@@@')[3]
         filepath_new = username + '\\' + filepath
-        if filepath_new in self.file_list:
+        if filepath_new in self.file_dict:
             size = os.path.getsize(filepath_new)
             os.remove(filepath_new)
-            del self.file_list[filepath_new]
+            del self.file_dict[filepath_new]
             self.mydb.remove('file_tbl', {'filepath': filepath_new})
-            self.client_list[username]['remain_storage'] += size
+            self.client_dict[username]['remain_storage'] += size
             self.mydb.update('client_tbl', {'username': username},
-                             {'remain_storage': self.client_list[username]['remain_storage']})
+                             {'remain_storage': self.client_dict[username]['remain_storage']})
             reply = 'REP@@@OK'
             logger.info('File remove over.')
         else:

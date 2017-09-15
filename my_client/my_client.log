@@ -1,0 +1,582 @@
+[2017-09-14 09:00:57,574] dsv.py [line:29] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:00:57,575] dsv.py [line:35] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:00:57,576] dsv.py [line:37] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 09:00:57,577] dsv.py [line:39] INFO: Reply is: REP@@@OK
+[2017-09-14 09:01:55,456] dsv.py [line:29] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:01:55,457] dsv.py [line:35] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:01:55,458] dsv.py [line:37] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 09:01:55,459] dsv.py [line:39] INFO: Reply is: REP@@@OK
+[2017-09-14 09:02:12,997] dsv.py [line:29] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:02:12,999] dsv.py [line:35] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:02:12,999] dsv.py [line:37] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 09:02:13,000] dsv.py [line:39] INFO: Reply is: REP@@@OK
+[2017-09-14 09:02:13,001] dsv.py [line:46] INFO: Socket: ('127.0.0.1', 60176) has been closed.
+[2017-09-14 09:05:49,494] dsv.py [line:29] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:05:49,495] dsv.py [line:35] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:05:49,495] dsv.py [line:37] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 09:05:49,496] dsv.py [line:39] INFO: Reply is: REP@@@OK
+[2017-09-14 09:05:49,497] dsv.py [line:45] INFO: Socket: ('127.0.0.1', 60182) has been closed.
+[2017-09-14 09:05:49,497] dsv.py [line:54] INFO: Sign up success, username is lijq
+[2017-09-14 09:07:30,023] dsv.py [line:29] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:07:30,024] dsv.py [line:36] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:07:30,024] dsv.py [line:38] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 09:07:30,025] dsv.py [line:40] INFO: Reply is: REP@@@NO
+[2017-09-14 09:07:30,025] dsv.py [line:46] INFO: Socket: ('127.0.0.1', 60201) has been closed.
+[2017-09-14 09:07:30,026] dsv.py [line:58] WARNING: Sign up failed.
+[2017-09-14 09:13:22,278] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:13:22,279] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:13:22,280] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 09:13:22,280] dsv.py [line:41] INFO: Reply is: REP@@@NO
+[2017-09-14 09:13:22,280] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 60241) has been closed.
+[2017-09-14 09:13:22,281] dsv.py [line:59] WARNING: Sign up failed.
+[2017-09-14 09:13:28,749] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:13:28,750] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:13:28,750] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq2 has been sent.
+[2017-09-14 09:13:28,752] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 09:13:28,752] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 60242) has been closed.
+[2017-09-14 09:13:28,752] dsv.py [line:56] INFO: Sign up success, username is lijq2
+[2017-09-14 09:13:31,272] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:13:31,273] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:13:31,273] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq2 has been sent.
+[2017-09-14 09:13:31,274] dsv.py [line:41] INFO: Reply is: REP@@@NO
+[2017-09-14 09:13:31,274] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 60243) has been closed.
+[2017-09-14 09:13:31,274] dsv.py [line:59] WARNING: Sign up failed.
+[2017-09-14 09:13:32,033] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:13:32,034] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:13:32,034] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq2 has been sent.
+[2017-09-14 09:13:32,035] dsv.py [line:41] INFO: Reply is: REP@@@NO
+[2017-09-14 09:13:32,035] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 60244) has been closed.
+[2017-09-14 09:13:32,035] dsv.py [line:59] WARNING: Sign up failed.
+[2017-09-14 09:13:50,718] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:13:50,719] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:13:50,719] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 09:13:50,719] dsv.py [line:41] INFO: Reply is: REP@@@NO
+[2017-09-14 09:13:50,720] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 60247) has been closed.
+[2017-09-14 09:13:50,720] dsv.py [line:59] WARNING: Sign up failed.
+[2017-09-14 09:16:30,259] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:16:30,259] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 09:16:30,260] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:16:30,260] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 09:16:30,262] dsv.py [line:41] INFO: Reply is: REPLY@@@OK
+[2017-09-14 09:16:30,262] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 60278) has been closed.
+[2017-09-14 09:18:51,377] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 09:18:51,378] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 09:18:51,378] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 09:19:31,114] dsv.py [line:43] ERROR: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+[2017-09-14 09:19:31,146] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 60288) has been closed.
+[2017-09-14 09:19:31,146] dsv.py [line:93] INFO: Synchron failed.
+[2017-09-14 16:43:42,367] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:43:42,368] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:43:42,368] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 16:43:42,370] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:43:42,371] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63572) has been closed.
+[2017-09-14 16:43:42,371] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 16:44:06,970] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:44:06,971] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:44:06,971] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:44:06,971] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 16:44:06,972] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63578) has been closed.
+[2017-09-14 16:44:06,972] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:45:34,105] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:45:34,106] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:45:34,106] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:45:34,107] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 16:45:34,107] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63581) has been closed.
+[2017-09-14 16:45:34,107] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:45:34,107] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 16:45:34,107] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:45:34,107] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 16:45:34,110] dsv.py [line:41] INFO: Reply is: REPLY@@@OK
+[2017-09-14 16:45:34,110] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63582) has been closed.
+[2017-09-14 16:48:18,623] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:48:18,624] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:48:18,624] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 16:48:18,626] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:48:18,626] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63594) has been closed.
+[2017-09-14 16:48:18,626] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 16:48:18,626] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:48:18,626] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:48:18,627] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 16:48:18,627] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63595) has been closed.
+[2017-09-14 16:48:18,627] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:48:18,627] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 16:48:18,627] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:48:18,628] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 16:48:18,630] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:48:18,630] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63596) has been closed.
+[2017-09-14 16:48:18,631] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 16:49:35,529] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:49:35,530] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:49:35,531] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:49:35,531] dsv.py [line:41] INFO: Reply is: REP@@@NO
+[2017-09-14 16:49:35,531] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63601) has been closed.
+[2017-09-14 16:49:35,531] dsv.py [line:93] INFO: Synchron failed.
+[2017-09-14 16:49:35,531] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 16:49:35,532] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:49:35,532] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 16:49:55,598] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:49:55,599] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:49:55,599] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 16:49:55,601] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:49:55,601] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63605) has been closed.
+[2017-09-14 16:49:55,601] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 16:49:55,601] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:49:55,601] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:49:55,602] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 16:49:55,602] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63606) has been closed.
+[2017-09-14 16:49:55,602] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:49:55,602] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 16:49:55,602] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:49:55,602] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 16:49:55,605] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:49:55,605] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63607) has been closed.
+[2017-09-14 16:51:02,186] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:51:02,187] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:51:02,187] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 16:51:02,189] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:51:02,189] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63666) has been closed.
+[2017-09-14 16:51:02,189] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 16:51:02,189] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:51:02,190] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:51:02,190] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 16:51:02,190] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63667) has been closed.
+[2017-09-14 16:51:02,190] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:51:02,190] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 16:51:02,191] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:51:02,191] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 16:51:02,193] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:51:02,193] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63668) has been closed.
+[2017-09-14 16:51:02,193] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 16:51:12,946] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:51:12,947] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:51:12,947] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 16:51:12,948] dsv.py [line:41] INFO: Reply is: REP@@@NO
+[2017-09-14 16:51:12,948] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63669) has been closed.
+[2017-09-14 16:51:12,948] dsv.py [line:59] WARNING: Sign up failed.
+[2017-09-14 16:51:21,904] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:51:21,905] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:51:21,905] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:51:21,906] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1048576
+[2017-09-14 16:51:21,906] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63670) has been closed.
+[2017-09-14 16:51:21,906] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:51:21,906] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 16:51:21,906] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:51:21,907] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 16:51:21,909] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:51:21,909] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63671) has been closed.
+[2017-09-14 16:51:21,909] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 16:51:23,885] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:51:23,887] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:51:23,887] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:51:23,887] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@2097152@@@2097152
+[2017-09-14 16:51:23,887] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63672) has been closed.
+[2017-09-14 16:51:23,887] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:51:23,888] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 16:51:23,888] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:51:23,888] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 16:51:23,890] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:51:23,890] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63673) has been closed.
+[2017-09-14 16:51:23,891] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 16:53:24,272] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:53:24,273] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:53:24,273] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:53:24,274] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@3145728@@@3145728
+[2017-09-14 16:53:24,274] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63678) has been closed.
+[2017-09-14 16:53:24,274] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:53:24,274] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576888888
+[2017-09-14 16:53:24,275] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:53:24,275] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576888888 has been sent.
+[2017-09-14 16:53:24,275] dsv.py [line:41] INFO: Reply is: REP@@@NO
+[2017-09-14 16:53:24,275] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63679) has been closed.
+[2017-09-14 16:53:24,275] dsv.py [line:80] WARNING: Storage size 1048576888888 request failed!
+[2017-09-14 16:56:11,746] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:56:11,747] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:56:11,747] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:56:11,747] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@3145728@@@3145728
+[2017-09-14 16:56:11,748] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63687) has been closed.
+[2017-09-14 16:56:11,748] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:56:11,748] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:56:11,748] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@C:\Users\47521\Desktop\123.png@@@22448 has been sent.
+[2017-09-14 16:56:49,082] dsv.py [line:43] ERROR: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+[2017-09-14 16:56:49,082] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63688) has been closed.
+[2017-09-14 16:57:11,489] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:57:11,490] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:57:11,490] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 16:57:11,491] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:57:11,492] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63693) has been closed.
+[2017-09-14 16:57:11,492] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 16:57:11,492] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:57:11,492] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:57:11,493] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 16:57:11,493] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63694) has been closed.
+[2017-09-14 16:57:11,493] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:57:11,493] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 16:57:11,493] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:57:11,493] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 16:57:11,496] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 16:57:11,496] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63695) has been closed.
+[2017-09-14 16:57:11,496] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 16:57:11,497] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:57:11,497] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@C:\Users\47521\Desktop\123.png@@@22448 has been sent.
+[2017-09-14 16:57:11,498] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 16:57:11,498] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63696) has been closed.
+[2017-09-14 16:57:11,498] dsv.py [line:116] INFO: You can now upload your file.
+[2017-09-14 16:58:24,052] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 16:58:24,053] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 16:58:24,053] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 16:58:24,053] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1048576
+[2017-09-14 16:58:24,054] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63701) has been closed.
+[2017-09-14 16:58:24,054] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 16:58:24,060] dsv.py [line:137] INFO: Upload file success.
+[2017-09-14 17:02:11,696] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:02:11,697] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:02:11,697] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 17:02:11,699] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:02:11,699] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63723) has been closed.
+[2017-09-14 17:02:11,699] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 17:02:11,700] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:02:11,700] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:02:11,700] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 17:02:11,700] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63724) has been closed.
+[2017-09-14 17:02:11,700] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:02:11,700] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 17:02:11,701] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:02:11,701] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 17:02:11,703] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:02:11,704] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63725) has been closed.
+[2017-09-14 17:02:11,704] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 17:02:11,704] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:02:11,704] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@C:\Users\47521\Desktop\123.png@@@22448 has been sent.
+[2017-09-14 17:02:11,705] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 17:02:11,705] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63726) has been closed.
+[2017-09-14 17:02:11,705] dsv.py [line:116] INFO: You can now upload your file.
+[2017-09-14 17:02:11,709] dsv.py [line:137] INFO: Upload file success.
+[2017-09-14 17:03:27,389] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:03:27,390] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:03:27,390] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:03:27,390] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1026128
+[2017-09-14 17:03:27,391] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63738) has been closed.
+[2017-09-14 17:03:27,391] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:03:27,391] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:03:27,391] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@C:\Users\47521\Desktop\123.png@@@22448 has been sent.
+[2017-09-14 17:03:27,392] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 17:03:27,392] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63739) has been closed.
+[2017-09-14 17:03:27,392] dsv.py [line:116] INFO: You can now upload your file.
+[2017-09-14 17:03:27,396] dsv.py [line:137] INFO: Upload file success.
+[2017-09-14 17:07:49,364] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:07:49,365] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:07:49,365] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:07:49,366] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1003680
+[2017-09-14 17:07:49,366] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63768) has been closed.
+[2017-09-14 17:07:49,366] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:07:49,366] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:07:49,366] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@C:\Users\47521\Desktop\123.png@@@22448 has been sent.
+[2017-09-14 17:07:49,367] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 17:07:49,367] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63769) has been closed.
+[2017-09-14 17:07:49,367] dsv.py [line:116] INFO: You can now upload your file.
+[2017-09-14 17:07:49,372] dsv.py [line:137] INFO: Upload file success.
+[2017-09-14 17:08:02,838] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:08:02,840] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:08:02,840] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 17:08:02,842] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:08:02,842] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63775) has been closed.
+[2017-09-14 17:08:02,842] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 17:08:02,842] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:08:02,843] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:08:02,843] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 17:08:02,843] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63776) has been closed.
+[2017-09-14 17:08:02,843] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:08:02,843] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 17:08:02,844] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:08:02,844] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 17:08:02,846] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:08:02,846] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63777) has been closed.
+[2017-09-14 17:08:02,846] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 17:08:02,847] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:08:02,847] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@C:\Users\47521\Desktop\123.png@@@22448 has been sent.
+[2017-09-14 17:08:02,847] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 17:08:02,847] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63778) has been closed.
+[2017-09-14 17:08:02,848] dsv.py [line:116] INFO: You can now upload your file.
+[2017-09-14 17:08:02,851] dsv.py [line:137] INFO: Upload file success.
+[2017-09-14 17:08:10,455] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:08:10,456] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:08:10,456] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:08:10,456] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1026128
+[2017-09-14 17:08:10,457] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63780) has been closed.
+[2017-09-14 17:08:10,457] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:08:10,457] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:08:10,457] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@C:\Users\47521\Desktop\123.png@@@22448 has been sent.
+[2017-09-14 17:08:10,458] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 17:08:10,458] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63781) has been closed.
+[2017-09-14 17:08:10,458] dsv.py [line:116] INFO: You can now upload your file.
+[2017-09-14 17:08:10,462] dsv.py [line:137] INFO: Upload file success.
+[2017-09-14 17:08:58,615] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:08:58,616] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:08:58,617] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 17:08:58,618] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:08:58,618] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63787) has been closed.
+[2017-09-14 17:08:58,618] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 17:08:58,619] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:08:58,619] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:08:58,619] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 17:08:58,619] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63788) has been closed.
+[2017-09-14 17:08:58,620] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:08:58,620] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 17:08:58,620] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:08:58,620] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 17:08:58,622] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:08:58,623] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63789) has been closed.
+[2017-09-14 17:08:58,623] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 17:08:58,623] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:08:58,623] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@C:\Users\47521\Desktop\123.png@@@22448 has been sent.
+[2017-09-14 17:08:58,624] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 17:08:58,624] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63790) has been closed.
+[2017-09-14 17:08:58,624] dsv.py [line:116] INFO: You can now upload your file.
+[2017-09-14 17:08:58,627] dsv.py [line:137] INFO: Upload file success.
+[2017-09-14 17:10:57,439] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:10:57,440] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:10:57,441] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 17:10:57,442] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:10:57,442] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63801) has been closed.
+[2017-09-14 17:10:57,442] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 17:10:57,443] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:10:57,443] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:10:57,443] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 17:10:57,443] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63802) has been closed.
+[2017-09-14 17:10:57,443] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:10:57,443] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 17:10:57,443] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:10:57,443] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 17:10:57,446] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:10:57,446] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63803) has been closed.
+[2017-09-14 17:10:57,446] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 17:10:57,447] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:10:57,447] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@123.png@@@22448 has been sent.
+[2017-09-14 17:10:57,447] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 17:10:57,448] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63804) has been closed.
+[2017-09-14 17:10:57,448] dsv.py [line:116] INFO: You can now upload your file.
+[2017-09-14 17:10:57,451] dsv.py [line:137] INFO: Upload file success.
+[2017-09-14 17:11:11,560] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:11:11,561] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:11:11,561] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:11:11,562] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1026128
+[2017-09-14 17:11:11,562] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63806) has been closed.
+[2017-09-14 17:11:11,562] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:11:11,563] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:11:11,563] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@123.png@@@22448 has been sent.
+[2017-09-14 17:11:11,563] dsv.py [line:41] INFO: Reply is: REP@@@ERROR_NAME
+[2017-09-14 17:11:11,564] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63807) has been closed.
+[2017-09-14 17:11:11,564] dsv.py [line:110] WARNING: Filename in this path is already exist.
+[2017-09-14 17:14:51,760] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:14:51,761] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:14:51,761] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:14:51,762] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1026128
+[2017-09-14 17:14:51,762] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63830) has been closed.
+[2017-09-14 17:14:51,762] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:14:51,762] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:14:51,763] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:14:51,764] dsv.py [line:41] INFO: Reply is: REP@@@[{'_id': ObjectId('59ba47a13a255309b42261e4'), 'filepath': 'lijq\\mypic\\123.png', 'filename': '123.png', 'owner': 'lijq', 'size': 22448, 'path': 'mypic\\', 'storage_name': 'local', 'md5': 'da4667d9a0d83006abf854aae559c4c3', 'lmt': datetime.datetime(2017, 9, 14, 17, 10, 57, 450000)}]
+[2017-09-14 17:14:51,764] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63831) has been closed.
+[2017-09-14 17:16:07,178] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:16:07,179] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:16:07,179] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:16:07,180] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1026128
+[2017-09-14 17:16:07,180] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63834) has been closed.
+[2017-09-14 17:16:07,180] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:16:07,180] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:16:07,181] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:16:07,182] dsv.py [line:41] INFO: Reply is: REP@@@[{'_id': ObjectId('59ba47a13a255309b42261e4'), 'filepath': 'lijq\\mypic\\123.png', 'filename': '123.png', 'owner': 'lijq', 'size': 22448, 'path': 'mypic\\', 'storage_name': 'local', 'md5': 'da4667d9a0d83006abf854aae559c4c3', 'lmt': datetime.datetime(2017, 9, 14, 17, 10, 57, 450000)}]
+[2017-09-14 17:16:07,182] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63835) has been closed.
+[2017-09-14 17:16:07,182] dsv.py [line:99] INFO: REP@@@[{'_id': ObjectId('59ba47a13a255309b42261e4'), 'filepath': 'lijq\\mypic\\123.png', 'filename': '123.png', 'owner': 'lijq', 'size': 22448, 'path': 'mypic\\', 'storage_name': 'local', 'md5': 'da4667d9a0d83006abf854aae559c4c3', 'lmt': datetime.datetime(2017, 9, 14, 17, 10, 57, 450000)}]
+[2017-09-14 17:22:48,161] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:22:48,162] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:22:48,162] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 17:22:48,164] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:22:48,164] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63848) has been closed.
+[2017-09-14 17:22:48,164] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 17:22:48,165] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:22:48,165] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:22:48,165] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 17:22:48,165] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63849) has been closed.
+[2017-09-14 17:22:48,165] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:22:48,165] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 17:22:48,166] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:22:48,166] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 17:22:48,168] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:22:48,168] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63850) has been closed.
+[2017-09-14 17:22:48,169] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 17:22:48,169] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:22:48,169] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@123.png@@@22448 has been sent.
+[2017-09-14 17:22:48,170] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 17:22:48,170] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63851) has been closed.
+[2017-09-14 17:22:48,170] dsv.py [line:117] INFO: You can now upload your file.
+[2017-09-14 17:22:48,174] dsv.py [line:138] INFO: Upload file success.
+[2017-09-14 17:22:48,174] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:22:48,174] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:22:48,175] dsv.py [line:41] INFO: Reply is: REP@@@[]
+[2017-09-14 17:22:48,175] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63853) has been closed.
+[2017-09-14 17:22:48,176] dsv.py [line:99] INFO: REP@@@[]
+[2017-09-14 17:23:58,338] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:23:58,339] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:23:58,339] dsv.py [line:39] INFO: Request: REQ@@@SIGNUP@@@lijq has been sent.
+[2017-09-14 17:23:58,341] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:23:58,341] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63877) has been closed.
+[2017-09-14 17:23:58,341] dsv.py [line:56] INFO: Sign up success, username is lijq
+[2017-09-14 17:23:58,341] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:23:58,341] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:23:58,342] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@0@@@0
+[2017-09-14 17:23:58,342] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63878) has been closed.
+[2017-09-14 17:23:58,342] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:23:58,342] dsv.py [line:72] INFO: Request is: REQ@@@STO_REQ@@@lijq@@@1048576
+[2017-09-14 17:23:58,342] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:23:58,343] dsv.py [line:39] INFO: Request: REQ@@@STO_REQ@@@lijq@@@1048576 has been sent.
+[2017-09-14 17:23:58,345] dsv.py [line:41] INFO: Reply is: REP@@@OK
+[2017-09-14 17:23:58,345] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63879) has been closed.
+[2017-09-14 17:23:58,345] dsv.py [line:77] INFO: Request storage 1048576 success.
+[2017-09-14 17:23:58,345] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:23:58,346] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\@@@123.png@@@22448 has been sent.
+[2017-09-14 17:23:58,346] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 17:23:58,346] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63880) has been closed.
+[2017-09-14 17:23:58,346] dsv.py [line:117] INFO: You can now upload your file.
+[2017-09-14 17:23:58,350] dsv.py [line:138] INFO: Upload file success.
+[2017-09-14 17:23:58,351] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:23:58,351] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:23:58,352] dsv.py [line:41] INFO: Reply is: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:23:58,352] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63882) has been closed.
+[2017-09-14 17:23:58,352] dsv.py [line:99] INFO: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:24:28,655] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:24:28,656] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:24:28,657] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:24:28,657] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1026128
+[2017-09-14 17:24:28,657] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63891) has been closed.
+[2017-09-14 17:24:28,657] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:24:28,658] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:24:28,658] dsv.py [line:39] INFO: Request: REQ@@@UPLOAD@@@lijq@@@mypic\temp\@@@123.png@@@22448 has been sent.
+[2017-09-14 17:24:28,658] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@47520
+[2017-09-14 17:24:28,659] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63892) has been closed.
+[2017-09-14 17:24:28,659] dsv.py [line:117] INFO: You can now upload your file.
+[2017-09-14 17:24:28,664] dsv.py [line:138] INFO: Upload file success.
+[2017-09-14 17:24:28,664] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:24:28,665] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:24:28,666] dsv.py [line:41] INFO: Reply is: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:24:28,666] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63894) has been closed.
+[2017-09-14 17:24:28,666] dsv.py [line:99] INFO: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:27:06,110] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:27:06,111] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:27:06,111] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:27:06,112] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1003680
+[2017-09-14 17:27:06,112] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63959) has been closed.
+[2017-09-14 17:27:06,112] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:27:06,112] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:27:06,112] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:27:06,114] dsv.py [line:41] INFO: Reply is: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:27:06,114] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63960) has been closed.
+[2017-09-14 17:27:06,114] dsv.py [line:99] INFO: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:28:44,628] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:28:44,629] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:28:44,629] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:28:44,630] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1003680
+[2017-09-14 17:28:44,630] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63961) has been closed.
+[2017-09-14 17:28:44,630] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:28:44,630] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:28:44,630] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:28:44,632] dsv.py [line:41] INFO: Reply is: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:28:44,632] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63962) has been closed.
+[2017-09-14 17:28:44,632] dsv.py [line:99] INFO: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:28:44,632] dsv.py [line:25] INFO: Self data recieve face is set as 127.0.0.1:47777
+[2017-09-14 17:29:04,930] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:29:04,931] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:29:04,932] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:29:04,932] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1003680
+[2017-09-14 17:29:04,932] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63963) has been closed.
+[2017-09-14 17:29:04,932] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:29:04,933] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:29:04,933] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:29:04,934] dsv.py [line:41] INFO: Reply is: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:29:04,934] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63964) has been closed.
+[2017-09-14 17:29:04,934] dsv.py [line:99] INFO: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:29:04,935] dsv.py [line:25] INFO: Self data recieve face is set as 127.0.0.1:47777
+[2017-09-14 17:29:04,935] dsv.py [line:152] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:29:04,935] dsv.py [line:154] INFO: Request: REQ@@@DOWNLOAD@@@lijq@@@mypic\123.png@@@127.0.0.1@@@47777 has been sent.
+[2017-09-14 17:29:34,270] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:29:34,271] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:29:34,271] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:29:34,271] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1003680
+[2017-09-14 17:29:34,272] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63966) has been closed.
+[2017-09-14 17:29:34,272] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:29:34,272] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:29:34,272] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:29:34,273] dsv.py [line:41] INFO: Reply is: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:29:34,274] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63967) has been closed.
+[2017-09-14 17:29:34,274] dsv.py [line:99] INFO: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:29:34,274] dsv.py [line:25] INFO: Self data recieve face is set as 127.0.0.1:47777
+[2017-09-14 17:29:34,274] dsv.py [line:152] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:29:34,274] dsv.py [line:154] INFO: Request: REQ@@@DOWNLOAD@@@lijq@@@mypic\123.png@@@127.0.0.1@@@47777 has been sent.
+[2017-09-14 17:30:01,943] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:30:01,944] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:30:01,944] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:30:01,945] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1003680
+[2017-09-14 17:30:01,945] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63971) has been closed.
+[2017-09-14 17:30:01,945] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:30:01,945] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:30:01,945] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:30:01,946] dsv.py [line:41] INFO: Reply is: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:30:01,947] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63972) has been closed.
+[2017-09-14 17:30:01,947] dsv.py [line:99] INFO: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:30:01,947] dsv.py [line:25] INFO: Self data recieve face is set as 127.0.0.1:47777
+[2017-09-14 17:30:01,947] dsv.py [line:152] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:30:01,947] dsv.py [line:154] INFO: Request: REQ@@@DOWNLOAD@@@lijq@@@mypic\123.png@@@127.0.0.1@@@47777 has been sent.
+[2017-09-14 17:30:20,578] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:30:20,579] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:30:20,579] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:30:20,580] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1003680
+[2017-09-14 17:30:20,580] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63974) has been closed.
+[2017-09-14 17:30:20,580] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:30:20,580] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:30:20,580] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:30:20,581] dsv.py [line:41] INFO: Reply is: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:30:20,582] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63975) has been closed.
+[2017-09-14 17:30:20,582] dsv.py [line:99] INFO: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:30:20,582] dsv.py [line:25] INFO: Self data recieve face is set as 127.0.0.1:47777
+[2017-09-14 17:30:20,582] dsv.py [line:152] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:30:20,582] dsv.py [line:154] INFO: Request: REQ@@@DOWNLOAD@@@lijq@@@mypic\123.png@@@127.0.0.1@@@47777 has been sent.
+[2017-09-14 17:30:20,583] dsv.py [line:158] INFO: Socket: ('127.0.0.1', 63976) has been closed.
+[2017-09-14 17:30:20,583] dsv.py [line:167] INFO: Server socket bind to 127.0.0.1:47777
+[2017-09-14 17:30:20,583] dsv.py [line:169] INFO: Start listening
+[2017-09-14 17:30:20,583] dsv.py [line:170] INFO: Waiting for connect...
+[2017-09-14 17:31:56,535] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:31:56,536] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:31:56,536] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:31:56,537] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1003680
+[2017-09-14 17:31:56,537] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63978) has been closed.
+[2017-09-14 17:31:56,537] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:31:56,537] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:31:56,538] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:31:56,539] dsv.py [line:41] INFO: Reply is: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:31:56,539] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63979) has been closed.
+[2017-09-14 17:31:56,539] dsv.py [line:99] INFO: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:31:56,539] dsv.py [line:25] INFO: Self data recieve face is set as 127.0.0.1:47777
+[2017-09-14 17:31:56,539] dsv.py [line:152] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:31:56,540] dsv.py [line:154] INFO: Request: REQ@@@DOWNLOAD@@@lijq@@@mypic\123.png@@@127.0.0.1@@@47777 has been sent.
+[2017-09-14 17:31:56,540] dsv.py [line:158] INFO: Socket: ('127.0.0.1', 63980) has been closed.
+[2017-09-14 17:31:56,540] dsv.py [line:167] INFO: Server socket bind to 127.0.0.1:47777
+[2017-09-14 17:31:56,540] dsv.py [line:169] INFO: Start listening
+[2017-09-14 17:31:56,540] dsv.py [line:170] INFO: Waiting for connect...
+[2017-09-14 17:34:05,501] dsv.py [line:30] INFO: Target server is set as 127.0.0.1:47523
+[2017-09-14 17:34:05,503] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:34:05,503] dsv.py [line:39] INFO: Request: SYNC@@@lijq has been sent.
+[2017-09-14 17:34:05,504] dsv.py [line:41] INFO: Reply is: REP@@@OK@@@1048576@@@1003680
+[2017-09-14 17:34:05,504] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63986) has been closed.
+[2017-09-14 17:34:05,504] dsv.py [line:90] INFO: Synchron success.
+[2017-09-14 17:34:05,504] dsv.py [line:37] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:34:05,504] dsv.py [line:39] INFO: Request: REQ@@@FILELIST@@@lijq has been sent.
+[2017-09-14 17:34:05,506] dsv.py [line:41] INFO: Reply is: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:34:05,506] dsv.py [line:47] INFO: Socket: ('127.0.0.1', 63987) has been closed.
+[2017-09-14 17:34:05,506] dsv.py [line:99] INFO: REP@@@[{'filepath': 'mypic\\123.png', 'filename': '123.png', 'path': 'mypic\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}, {'filepath': 'mypic\\temp\\123.png', 'filename': '123.png', 'path': 'mypic\\temp\\', 'md5': 'da4667d9a0d83006abf854aae559c4c3'}]
+[2017-09-14 17:34:05,507] dsv.py [line:25] INFO: Self data recieve face is set as 127.0.0.1:47777
+[2017-09-14 17:34:05,507] dsv.py [line:152] INFO: Connect to server 127.0.0.1:47523
+[2017-09-14 17:34:05,507] dsv.py [line:154] INFO: Request: REQ@@@DOWNLOAD@@@lijq@@@mypic\123.png@@@127.0.0.1@@@47777 has been sent.
+[2017-09-14 17:34:05,507] dsv.py [line:158] INFO: Socket: ('127.0.0.1', 63988) has been closed.
+[2017-09-14 17:34:05,507] dsv.py [line:167] INFO: Server socket bind to 127.0.0.1:47777
+[2017-09-14 17:34:05,507] dsv.py [line:169] INFO: Start listening
+[2017-09-14 17:34:05,507] dsv.py [line:170] INFO: Waiting for connect...
