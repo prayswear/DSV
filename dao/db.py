@@ -42,7 +42,7 @@ class DsvDb():
     def update(self, tbl, condition, value):
         value['lmt'] = datetime.datetime.now()
         self.db[tbl].update(condition, {"$set": value})
-        logger.info('Update ' + str(condition) + 'item in ' + tbl)
+        logger.info('Update ' + str(condition) + ' item in ' + tbl)
 
     def query(self, tbl, condition):
         result = self.db[tbl].find_one(condition)
