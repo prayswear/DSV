@@ -1,0 +1,98 @@
+[2017-10-17 15:34:10,664] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:34:10,665] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:34:10,982] db.py [line:36] INFO: Add new item: {'remain_storage': 0, '_id': ObjectId('59e5b272ad0e352ee146777d'), 'mac': 'ff:ff:ff:ff:ff:ff', 'storage_name': 'total', 'lmt': datetime.datetime(2017, 10, 17, 15, 34, 10, 665101), 'total_storage': 0} to storage_tbl
+[2017-10-17 15:34:10,983] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'remain_storage': 0, '_id': ObjectId('59e5b272ad0e352ee146777d'), 'mac': 'ff:ff:ff:ff:ff:ff', 'storage_name': 'total', 'lmt': datetime.datetime(2017, 10, 17, 15, 34, 10, 665000), 'total_storage': 0}
+[2017-10-17 15:34:10,998] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:34:10,998] storage_manager.py [line:12] INFO: Init storage over
+[2017-10-17 15:35:06,545] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:35:06,545] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:35:06,547] db.py [line:36] INFO: Add new item: {'storage_name': 'total', 'total_storage': 0, '_id': ObjectId('59e5b2aaad0e352f09eaffd2'), 'mac': 'ff:ff:ff:ff:ff:ff', 'lmt': datetime.datetime(2017, 10, 17, 15, 35, 6, 546017), 'remain_storage': 0} to storage_tbl
+[2017-10-17 15:35:06,547] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'storage_name': 'total', 'total_storage': 0, '_id': ObjectId('59e5b272ad0e352ee146777d'), 'mac': 'ff:ff:ff:ff:ff:ff', 'lmt': datetime.datetime(2017, 10, 17, 15, 34, 10, 984000), 'remain_storage': 0}
+[2017-10-17 15:35:06,548] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:35:06,548] storage_manager.py [line:12] INFO: Init storage over
+[2017-10-17 15:36:34,828] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:36:34,828] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:36:34,829] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'mac': 'ff:ff:ff:ff:ff:ff', '_id': ObjectId('59e5b272ad0e352ee146777d'), 'storage_name': 'total', 'total_storage': 0, 'lmt': datetime.datetime(2017, 10, 17, 15, 35, 6, 548000), 'remain_storage': 0}
+[2017-10-17 15:36:34,829] storage_manager.py [line:13] INFO: Init storage over
+[2017-10-17 15:36:34,830] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'mac': 'ff:ff:ff:ff:ff:ff', '_id': ObjectId('59e5b272ad0e352ee146777d'), 'storage_name': 'total', 'total_storage': 0, 'lmt': datetime.datetime(2017, 10, 17, 15, 35, 6, 548000), 'remain_storage': 0}
+[2017-10-17 15:36:34,831] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'mac': 'ff:ff:ff:ff:ff:ff', '_id': ObjectId('59e5b272ad0e352ee146777d'), 'storage_name': 'total', 'total_storage': 0, 'lmt': datetime.datetime(2017, 10, 17, 15, 35, 6, 548000), 'remain_storage': 0}
+[2017-10-17 15:36:34,831] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:37:59,063] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:37:59,063] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:38:36,766] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:38:36,766] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:38:36,768] db.py [line:59] INFO: Remove all data from storage_tbl
+[2017-10-17 15:38:36,769] db.py [line:59] INFO: Remove all data from client_tbl
+[2017-10-17 15:38:36,769] db.py [line:59] INFO: Remove all data from file_tbl
+[2017-10-17 15:38:36,770] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:38:36,770] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:38:36,772] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is None
+[2017-10-17 15:38:36,772] db.py [line:36] INFO: Add new item: {'mac': 'ff:ff:ff:ff:ff:ff', 'storage_name': 'total', 'total_storage': 0, 'lmt': datetime.datetime(2017, 10, 17, 15, 38, 36, 772377), 'remain_storage': 0, '_id': ObjectId('59e5b37cad0e352f7f965663')} to storage_tbl
+[2017-10-17 15:38:36,773] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'_id': ObjectId('59e5b37cad0e352f7f965663'), 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 0, 'lmt': datetime.datetime(2017, 10, 17, 15, 38, 36, 772000), 'storage_name': 'total', 'remain_storage': 0}
+[2017-10-17 15:38:36,774] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:38:36,774] storage_manager.py [line:13] INFO: Init storage over
+[2017-10-17 15:45:56,048] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:45:56,048] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:45:56,050] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'storage_name': 'total', 'remain_storage': 0, 'total_storage': 0, 'lmt': datetime.datetime(2017, 10, 17, 15, 38, 36, 773000), 'mac': 'ff:ff:ff:ff:ff:ff', '_id': ObjectId('59e5b37cad0e352f7f965663')}
+[2017-10-17 15:45:56,050] storage_manager.py [line:13] INFO: Init storage over
+[2017-10-17 15:45:56,051] db.py [line:45] INFO: Find {'storage_name': 'sto_server_1'} item in storage_tbl, result is None
+[2017-10-17 15:45:56,052] db.py [line:36] INFO: Add new item: {'storage_name': 'sto_server_1', 'remain_storage': 1073741824, 'total_storage': 1073741824, 'lmt': datetime.datetime(2017, 10, 17, 15, 45, 56, 51477), 'mac': '00:11:22:33:44:55', '_id': ObjectId('59e5b534ad0e35309634121d')} to storage_tbl
+[2017-10-17 15:45:56,052] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'storage_name': 'total', 'remain_storage': 0, 'total_storage': 0, 'lmt': datetime.datetime(2017, 10, 17, 15, 38, 36, 773000), 'mac': 'ff:ff:ff:ff:ff:ff', '_id': ObjectId('59e5b37cad0e352f7f965663')}
+[2017-10-17 15:45:56,053] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:47:19,597] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:47:19,597] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:47:19,599] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is None
+[2017-10-17 15:47:19,599] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is None
+[2017-10-17 15:47:19,600] db.py [line:36] INFO: Add new item: {'remain_storage': 0, '_id': ObjectId('59e5b587ad0e3530d16bb861'), 'lmt': datetime.datetime(2017, 10, 17, 15, 47, 19, 599931), 'storage_name': 'total', 'total_storage': 0, 'mac': 'ff:ff:ff:ff:ff:ff'} to storage_tbl
+[2017-10-17 15:47:19,601] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'remain_storage': 0, '_id': ObjectId('59e5b587ad0e3530d16bb861'), 'lmt': datetime.datetime(2017, 10, 17, 15, 47, 19, 599000), 'storage_name': 'total', 'total_storage': 0, 'mac': 'ff:ff:ff:ff:ff:ff'}
+[2017-10-17 15:47:19,601] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:47:19,601] storage_manager.py [line:13] INFO: Init storage over
+[2017-10-17 15:47:19,602] db.py [line:45] INFO: Find {'storage_name': 'sto_server_1'} item in storage_tbl, result is None
+[2017-10-17 15:47:19,602] db.py [line:36] INFO: Add new item: {'remain_storage': 1073741824, '_id': ObjectId('59e5b587ad0e3530d16bb862'), 'lmt': datetime.datetime(2017, 10, 17, 15, 47, 19, 602203), 'storage_name': 'sto_server_1', 'total_storage': 1073741824, 'mac': '00:11:22:33:44:55'} to storage_tbl
+[2017-10-17 15:47:19,603] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'remain_storage': 0, '_id': ObjectId('59e5b587ad0e3530d16bb861'), 'lmt': datetime.datetime(2017, 10, 17, 15, 47, 19, 601000), 'storage_name': 'total', 'total_storage': 0, 'mac': 'ff:ff:ff:ff:ff:ff'}
+[2017-10-17 15:47:19,603] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:53:04,736] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:53:04,736] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:53:04,738] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'mac': 'ff:ff:ff:ff:ff:ff', 'storage_name': 'total', 'lmt': datetime.datetime(2017, 10, 17, 15, 47, 19, 603000), 'total_storage': 1073741824, '_id': ObjectId('59e5b587ad0e3530d16bb861'), 'remain_storage': 1073741824}
+[2017-10-17 15:53:04,738] storage_manager.py [line:13] INFO: Init storage over
+[2017-10-17 15:53:04,739] db.py [line:45] INFO: Find {'storage_name': 'sto_server_1'} item in storage_tbl, result is {'mac': '00:11:22:33:44:55', 'storage_name': 'sto_server_1', 'lmt': datetime.datetime(2017, 10, 17, 15, 47, 19, 602000), 'total_storage': 1073741824, '_id': ObjectId('59e5b587ad0e3530d16bb862'), 'remain_storage': 1073741824}
+[2017-10-17 15:54:00,570] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:54:00,570] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:54:00,572] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'remain_storage': 1073741824, '_id': ObjectId('59e5b587ad0e3530d16bb861'), 'total_storage': 1073741824, 'lmt': datetime.datetime(2017, 10, 17, 15, 47, 19, 603000)}
+[2017-10-17 15:54:00,572] storage_manager.py [line:13] INFO: Init storage over
+[2017-10-17 15:54:00,572] db.py [line:45] INFO: Find {'storage_name': 'sto_server_1'} item in storage_tbl, result is {'storage_name': 'sto_server_1', 'mac': '00:11:22:33:44:55', 'remain_storage': 1073741824, '_id': ObjectId('59e5b587ad0e3530d16bb862'), 'total_storage': 1073741824, 'lmt': datetime.datetime(2017, 10, 17, 15, 47, 19, 602000)}
+[2017-10-17 15:54:00,573] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'storage_name': 'total', 'mac': 'ff:ff:ff:ff:ff:ff', 'remain_storage': 1073741824, '_id': ObjectId('59e5b587ad0e3530d16bb861'), 'total_storage': 1073741824, 'lmt': datetime.datetime(2017, 10, 17, 15, 47, 19, 603000)}
+[2017-10-17 15:54:00,574] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:56:15,544] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:56:15,544] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:56:15,546] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is None
+[2017-10-17 15:56:15,546] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is None
+[2017-10-17 15:56:15,547] db.py [line:36] INFO: Add new item: {'storage_name': 'total', 'total_storage': 0, 'lmt': datetime.datetime(2017, 10, 17, 15, 56, 15, 546985), '_id': ObjectId('59e5b79fad0e35328353d2d2'), 'mac': 'ff:ff:ff:ff:ff:ff', 'remain_storage': 0} to storage_tbl
+[2017-10-17 15:56:15,548] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'storage_name': 'total', 'total_storage': 0, 'lmt': datetime.datetime(2017, 10, 17, 15, 56, 15, 546000), '_id': ObjectId('59e5b79fad0e35328353d2d2'), 'mac': 'ff:ff:ff:ff:ff:ff', 'remain_storage': 0}
+[2017-10-17 15:56:15,548] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:56:15,548] storage_manager.py [line:13] INFO: Init storage over
+[2017-10-17 15:56:15,549] db.py [line:45] INFO: Find {'storage_name': 'sto_server_1'} item in storage_tbl, result is None
+[2017-10-17 15:56:15,549] db.py [line:36] INFO: Add new item: {'storage_name': 'sto_server_1', 'total_storage': 1073741824, 'lmt': datetime.datetime(2017, 10, 17, 15, 56, 15, 549442), '_id': ObjectId('59e5b79fad0e35328353d2d3'), 'mac': '00:11:22:33:44:55', 'remain_storage': 1073741824} to storage_tbl
+[2017-10-17 15:56:15,550] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'storage_name': 'total', 'total_storage': 0, 'lmt': datetime.datetime(2017, 10, 17, 15, 56, 15, 548000), '_id': ObjectId('59e5b79fad0e35328353d2d2'), 'mac': 'ff:ff:ff:ff:ff:ff', 'remain_storage': 0}
+[2017-10-17 15:56:15,551] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:56:28,253] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:56:28,253] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:56:28,255] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'storage_name': 'total', 'lmt': datetime.datetime(2017, 10, 17, 15, 56, 15, 550000), '_id': ObjectId('59e5b79fad0e35328353d2d2'), 'mac': 'ff:ff:ff:ff:ff:ff', 'remain_storage': 1073741824, 'total_storage': 1073741824}
+[2017-10-17 15:56:28,255] storage_manager.py [line:13] INFO: Init storage over
+[2017-10-17 15:56:28,256] db.py [line:45] INFO: Find {'storage_name': 'sto_server_1'} item in storage_tbl, result is {'storage_name': 'sto_server_1', 'lmt': datetime.datetime(2017, 10, 17, 15, 56, 15, 549000), '_id': ObjectId('59e5b79fad0e35328353d2d3'), 'mac': '00:11:22:33:44:55', 'remain_storage': 1073741824, 'total_storage': 1073741824}
+[2017-10-17 15:56:28,256] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'storage_name': 'total', 'lmt': datetime.datetime(2017, 10, 17, 15, 56, 15, 550000), '_id': ObjectId('59e5b79fad0e35328353d2d2'), 'mac': 'ff:ff:ff:ff:ff:ff', 'remain_storage': 1073741824, 'total_storage': 1073741824}
+[2017-10-17 15:56:28,257] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:56:28,258] db.py [line:55] INFO: Remove item{'storage_name': 'sto_server_1'} item from storage_tbl
+[2017-10-17 15:58:10,218] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:58:10,219] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:58:10,220] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'lmt': datetime.datetime(2017, 10, 17, 15, 56, 28, 256000), 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 0, 'remain_storage': 0, 'storage_name': 'total', '_id': ObjectId('59e5b79fad0e35328353d2d2')}
+[2017-10-17 15:58:10,220] storage_manager.py [line:13] INFO: Init storage over
+[2017-10-17 15:58:10,221] db.py [line:45] INFO: Find {'storage_name': 'sto_server_1'} item in storage_tbl, result is None
+[2017-10-17 15:58:10,221] db.py [line:36] INFO: Add new item: {'lmt': datetime.datetime(2017, 10, 17, 15, 58, 10, 221288), 'mac': '00:11:22:33:44:55', 'total_storage': 1073741824, 'remain_storage': 1073741824, 'storage_name': 'sto_server_1', '_id': ObjectId('59e5b812ad0e353301a28a22')} to storage_tbl
+[2017-10-17 15:58:10,222] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'lmt': datetime.datetime(2017, 10, 17, 15, 56, 28, 256000), 'mac': 'ff:ff:ff:ff:ff:ff', 'total_storage': 0, 'remain_storage': 0, 'storage_name': 'total', '_id': ObjectId('59e5b79fad0e35328353d2d2')}
+[2017-10-17 15:58:10,222] db.py [line:41] INFO: Update {'storage_name': 'total'} item in storage_tbl
+[2017-10-17 15:58:16,941] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:58:16,941] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:58:16,942] db.py [line:45] INFO: Find {'storage_name': 'total'} item in storage_tbl, result is {'mac': 'ff:ff:ff:ff:ff:ff', 'lmt': datetime.datetime(2017, 10, 17, 15, 58, 10, 222000), 'remain_storage': 1073741824, 'storage_name': 'total', '_id': ObjectId('59e5b79fad0e35328353d2d2'), 'total_storage': 1073741824}
+[2017-10-17 15:58:16,943] storage_manager.py [line:13] INFO: Init storage over
+[2017-10-17 15:58:16,943] db.py [line:45] INFO: Find {'storage_name': 'sto_server_1'} item in storage_tbl, result is {'mac': '00:11:22:33:44:55', 'lmt': datetime.datetime(2017, 10, 17, 15, 58, 10, 221000), 'remain_storage': 1073741824, 'storage_name': 'sto_server_1', '_id': ObjectId('59e5b812ad0e353301a28a22'), 'total_storage': 1073741824}

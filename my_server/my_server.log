@@ -1416,3 +1416,13 @@
 [2017-09-15 17:26:26,398] db.py [line:45] INFO: Update {'username': 'lijq'}item in client_tbl
 [2017-09-15 17:26:26,398] client_manager.py [line:303] INFO: File remove over.
 [2017-09-15 17:26:26,398] client_manager.py [line:84] INFO: Socket: ('127.0.0.1', 50098) has been closed.
+[2017-10-17 15:47:06,966] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:47:06,966] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:47:06,968] db.py [line:59] INFO: Remove all data from storage_tbl
+[2017-10-17 15:47:06,968] db.py [line:59] INFO: Remove all data from client_tbl
+[2017-10-17 15:47:06,968] db.py [line:59] INFO: Remove all data from file_tbl
+[2017-10-17 15:55:17,669] db.py [line:28] INFO: Get connection client.
+[2017-10-17 15:55:17,670] db.py [line:30] INFO: Get database: dsv
+[2017-10-17 15:55:17,672] db.py [line:59] INFO: Remove all data from storage_tbl
+[2017-10-17 15:55:17,673] db.py [line:59] INFO: Remove all data from client_tbl
+[2017-10-17 15:55:17,673] db.py [line:59] INFO: Remove all data from file_tbl
