@@ -7,7 +7,7 @@ logger = logging.getLogger('myLogger')
 
 
 class DsvDb():
-    # this class for basic database operate
+    # class for basic database operate
 
     def __init__(self):
         # init var
@@ -21,10 +21,6 @@ class DsvDb():
         self.remove_all('storage_tbl')
         self.remove_all('client_tbl')
         self.remove_all('file_tbl')
-        self.storage_tbl_add('total', 'ff:ff:ff:ff:ff:ff', 0, 0)
-        self.storage_tbl_add('local', '00:11:22:33:44:55', 1073741824, 1073741824)
-        self.update('storage_tbl', {'storage_name': 'total'},
-                    {'total_storage': 1073741824, 'remain_storage': 1073741824})
 
     def get_db(self, ip, port, db_name):
         # make connect and get a db entry
@@ -65,10 +61,6 @@ class DsvDb():
     def client_tbl_add(self, name):
         item = {'username': name, 'total_storage': 0, 'remain_storage': 0}
         self.add('client_tbl', item)
-
-    def storage_tbl_add(self, name, mac, total_storage, remain_storage):
-        item = {'storage_name': name, 'mac': mac, 'total_storage': total_storage, 'remain_storage': remain_storage}
-        self.add('storage_tbl', item)
 
     def file_tbl_add(self, filename, owner, size, path, server_name, md5):
         item = {'filepath': path + filename, 'filename': filename, 'owner': owner, 'size': size, 'path': path,
